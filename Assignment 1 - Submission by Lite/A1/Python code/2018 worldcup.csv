@@ -1,0 +1,65 @@
+Match_ID,Date,Location,Phase,Team1,Team1_Continent,Team1_Attempts,Team1_Corners,Team1_Offsides,Team1_Ball_Possession(%),Team1_Pass_Accuracy(%),Team1_Distance_Covered,Team1_Ball_Recovered,Team1_Yellow_Card,Team1_Red_Card,Team1_Fouls,Team2,Team2_Continent,Team2_Attempts,Team2_Corners,Team2_Offsides,Team2_Ball_Possession(%),Team2_Pass_Accuracy(%),Team2_Distance_Covered,Team2_Ball_Recovered,Team2_Yellow_Card,Team2_Red_Card,Team2_Fouls,Normal_Time,Total_Scores,Match_result
+1,14/06/2018,Luzhniki Stadium,Group,RUSSIA,Europe,13,6,3,0.4,0.78,118,53,1,0,22,SAUDI ARABIA,Asia,6,2,1,0.6,0.86,105,48,1,0,10,Yes,5,win
+2,15/06/2018,Ekaterinburg Arena,Group,EGYPT,Africa,8,0,1,0.43,0.78,112,57,2,0,12,URUGUAY,South America,14,5,1,0.57,0.86,111,54,0,0,6,Yes,1,loss
+3,15/06/2018,Saint Petersburg Stadium,Group,MOROCCO,Africa,13,5,0,0.64,0.86,101,38,1,0,22,IR IRAN,Asia,8,2,0,0.36,0.66,100,38,3,0,14,Yes,1,loss
+4,15/06/2018,Fisht Stadium,Group,PORTUGAL,Europe,8,4,1,0.39,0.87,102,36,1,0,12,SPAIN,Europe,12,5,3,0.61,0.93,103,28,1,0,10,Yes,6,draw
+5,16/06/2018,Kazan Arena ,Group,FRANCE,Europe,12,5,0,0.51,0.87,103,52,1,0,16,AUSTRALIA,Australia,4,1,0,0.49,0.85,111,49,3,0,19,Yes,3,win
+6,16/06/2018,Spartak Stadium,Group,ARGENTINA,South America,26,10,0,0.72,0.92,101,40,0,0,10,ICELAND,Europe,9,2,0,0.28,0.67,105,35,0,0,15,Yes,2,draw
+7,16/06/2018,Mordovia Arena,Group,PERU,South America,18,3,5,0.52,0.85,104,42,1,0,10,DENMARK,Europe,10,7,3,0.48,0.82,110,40,2,0,28,Yes,1,loss
+8,16/06/2018,Kaliningrad Stadium,Group,CROATIA,Europe,11,6,2,0.54,0.84,104,43,2,0,20,NIGERIA,Africa,14,5,1,0.46,0.84,101,42,1,0,16,Yes,2,win
+9,17/06/2018,Samara Arena ,Group,COSTA RICA,North America,10,5,1,0.5,0.83,107,38,2,0,18,SERBIA,Europe,10,4,3,0.5,0.83,109,42,2,0,15,Yes,1,loss
+10,17/06/2018,Luzhniki Stadium,Group,GERMANY,Europe,25,8,1,0.6,0.88,110,31,2,0,10,MEXICO,North America,12,1,2,0.4,0.82,106,38,2,0,15,Yes,1,loss
+11,17/06/2018,Rostov Arena,Group,BRAZIL,South America,20,7,1,0.52,0.88,103,51,1,0,12,SWITZERLAND,Europe,6,2,0,0.48,0.83,108,56,3,0,19,Yes,2,draw
+12,18/06/2018,Nizhny Novgorod Stadium,Group,SWEDEN,Europe,15,6,1,0.52,0.84,102,43,1,0,20,KOREA REPUBLIC,Asia,5,5,0,0.48,0.79,103,45,2,0,23,Yes,1,win
+13,18/06/2018,Fisht Stadium ,Group,BELGIUM,Europe,15,9,1,0.61,0.89,102,41,3,0,17,PANAMA,North America,6,3,3,0.39,0.82,100,38,5,0,18,Yes,3,win
+14,18/06/2018,Volgograd Arena,Group,TUNISIA,Africa,6,2,2,0.41,0.82,103,30,0,0,14,ENGLAND,Europe,17,7,3,0.59,0.91,105,37,1,0,8,Yes,3,loss
+15,19/06/2018,Mordovia Arena,Group,COLOMBIA,South America,8,3,2,0.41,0.82,93,40,2,1,15,JAPAN,Asia,14,6,1,0.59,0.87,101,46,1,0,9,Yes,3,loss
+16,19/06/2018,Spartak Stadium,Group,POLAND,Europe,10,3,3,0.57,0.88,110,43,1,0,8,SENEGAL,Africa,8,3,3,0.43,0.81,107,48,2,0,15,Yes,3,loss
+17,19/06/2018,Saint Petersburg Stadium,Group,RUSSIA,Europe,11,7,0,0.47,0.76,115,59,1,0,11,EGYPT,Africa,13,4,0,0.53,0.81,110,41,1,0,10,Yes,4,win
+18,20/06/2018,Luzhniki Stadium,Group,PORTUGAL,Europe,10,5,1,0.47,0.76,105,49,1,0,19,MOROCCO,Africa,16,7,1,0.53,0.77,107,66,1,0,23,Yes,1,win
+19,20/06/2018,Rostov Arena,Group,URUGUAY,South America,13,3,1,0.47,0.88,101,43,0,0,10,SAUDI ARABIA,Asia,8,4,2,0.53,0.86,100,45,0,0,13,Yes,1,win
+20,20/06/2018,Kazan Arena,Group,IR IRAN,Asia,5,2,2,0.3,0.69,106,50,2,0,14,SPAIN,Europe,17,6,1,0.7,0.89,105,35,0,0,14,Yes,1,loss
+21,21/06/2018,Samara Arena,Group,DENMARK,Europe,10,3,1,0.49,0.88,112,41,2,0,7,AUSTRALIA,Australia,14,5,0,0.51,0.85,114,42,0,0,5,Yes,2,draw
+22,21/06/2018,Ekaterinburg Arena,Group,FRANCE,Europe,12,5,0,0.44,0.77,103,46,2,0,11,PERU,South America,10,3,1,0.56,0.81,102,44,2,0,15,Yes,1,win
+23,21/06/2018,Nizhny Novgorod Stadium,Group,ARGENTINA,South America,10,5,3,0.58,0.81,101,35,3,0,15,CROATIA,Europe,15,2,3,0.42,0.8,104,34,4,0,23,Yes,3,loss
+24,22/06/2018,Saint Petersburg Stadium,Group,BRAZIL,South America,23,10,3,0.66,0.9,105,42,2,0,11,COSTA RICA,North America,4,1,3,0.34,0.73,109,38,1,0,11,Yes,2,win
+25,22/06/2018,Volgograd Arena,Group,NIGERIA,Africa,16,6,1,0.58,0.84,100,40,1,0,9,ICELAND,Europe,10,5,0,0.42,0.75,106,46,0,0,10,Yes,2,win
+26,22/06/2018,Kaliningrad Stadium,Group,SERBIA,Europe,12,3,0,0.42,0.78,116,44,4,0,17,SWITZERLAND,Europe,20,7,3,0.58,0.87,112,40,1,0,12,Yes,3,loss
+27,23/06/2018,Spartak Stadium,Group,BELGIUM,Europe,23,5,3,0.52,0.84,104,44,0,0,12,TUNISIA,Africa,15,2,3,0.48,0.82,102,37,1,0,13,Yes,7,win
+28,23/06/2018,Rostov Arena,Group,KOREA REPUBLIC,Asia,17,7,0,0.41,0.82,99,42,4,0,24,MEXICO,North America,13,5,0,0.59,0.89,97,40,0,0,7,Yes,3,loss
+29,23/06/2018,Fisht Stadium,Group,GERMANY,Europe,16,8,5,0.71,0.91,111,32,0,1,12,SWEDEN,Europe,8,3,2,0.29,0.77,110,46,2,0,13,Yes,3,win
+30,24/06/2018,Nizhny Novgorod Stadium,Group,ENGLAND,Europe,12,3,3,0.58,0.94,99,27,1,0,14,PANAMA,North America,8,2,0,0.42,0.88,89,26,3,0,13,Yes,7,win
+31,24/06/2018,Ekaterinburg Arena,Group,JAPAN,Asia,7,2,2,0.54,0.84,105,39,2,0,8,SENEGAL,Africa,14,5,4,0.46,0.79,102,44,3,0,14,Yes,4,draw
+32,24/06/2018,Kazan Arena,Group,POLAND,Europe,9,7,1,0.45,0.79,107,57,2,0,15,COLOMBIA,South America,13,5,1,0.55,0.82,108,53,0,0,10,Yes,3,loss
+33,25/06/2018,Samara Arena,Group,URUGUAY,South America,17,4,0,0.56,0.88,101,34,1,0,17,RUSSIA,Europe,3,2,2,0.44,0.83,98,32,1,1,18,Yes,3,win
+34,25/06/2018,Volgograd Arena,Group,SAUDI ARABIA,Asia,22,7,1,0.61,0.9,101,49,0,0,7,EGYPT,Africa,8,2,3,0.39,0.82,106,51,2,0,16,Yes,3,win
+35,25/06/2018,Kaliningrad Stadium,Group,SPAIN,Europe,16,7,1,0.68,0.91,103,27,0,0,5,MOROCCO,Africa,6,1,1,0.32,0.84,111,40,6,0,17,Yes,4,draw
+36,25/06/2018,Mordovia Arena,Group,IR IRAN,Asia,8,1,1,0.32,0.69,93,34,2,0,16,PORTUGAL,Europe,14,5,1,0.68,0.89,89,38,4,0,11,Yes,2,draw
+37,26/06/2018,Fisht Stadium,Group,AUSTRALIA,Australia,14,8,3,0.53,0.86,105,35,4,0,13,PERU,South America,4,3,1,0.47,0.81,100,48,2,0,12,Yes,2,loss
+38,26/06/2018,Luzhniki Stadium,Group,DENMARK,Europe,5,4,1,0.38,0.74,106,44,1,0,10,FRANCE,Europe,11,2,1,0.62,0.87,104,33,0,0,10,Yes,0,draw
+39,26/06/2018,Saint Petersburg Stadium,Group,NIGERIA,Africa,9,3,0,0.34,0.76,98,44,2,0,20,ARGENTINA,South America,8,5,2,0.66,0.84,101,40,3,0,15,Yes,3,loss
+40,26/06/2018,Rostov Arena,Group,ICELAND,Europe,17,10,1,0.41,0.73,103,38,3,0,10,CROATIA,Europe,13,5,0,0.59,0.87,101,43,2,0,12,Yes,3,loss
+41,27/06/2018,Kazan Arena,Group,KOREA REPUBLIC,Asia,11,3,0,0.3,0.74,118,43,4,0,16,GERMANY,Europe,26,9,1,0.7,0.88,115,39,0,0,7,Yes,2,win
+42,27/06/2018,Ekaterinburg Arena,Group,MEXICO,North America,19,7,2,0.65,0.83,95,33,3,0,14,SWEDEN,Europe,13,3,0,0.35,0.67,102,45,2,0,11,Yes,3,loss
+43,27/06/2018,Spartak Stadium,Group,SERBIA,Europe,10,5,2,0.44,0.78,114,55,3,0,13,BRAZIL,South America,13,9,4,0.56,0.88,105,51,0,0,7,Yes,2,loss
+44,27/06/2018,Nizhny Novgorod Stadium,Group,SWITZERLAND,Europe,12,6,1,0.6,0.87,103,30,3,0,9,COSTA RICA,North America,14,5,1,0.4,0.82,103,42,3,0,14,Yes,4,draw
+45,28/06/2018,Volgograd Arena,Group,JAPAN,Asia,10,5,1,0.54,0.86,83,41,1,0,11,POLAND,Europe,11,7,0,0.46,0.83,80,36,0,0,8,Yes,1,loss
+46,28/06/2018,Samara Arena,Group,SENEGAL,Africa,8,1,3,0.43,0.78,97,55,1,0,15,COLOMBIA,South America,4,3,3,0.57,0.83,100,34,1,0,15,Yes,1,loss
+47,28/06/2018,Mordovia Arena,Group,PANAMA,North America,9,0,4,0.36,0.77,102,36,3,0,18,TUNISIA,Africa,15,6,1,0.64,0.87,107,43,3,0,19,Yes,3,loss
+48,28/06/2018,Kaliningrad Stadium,Group,ENGLAND,Europe,13,7,3,0.48,0.88,109,32,0,0,11,BELGIUM,Europe,15,2,1,0.52,0.88,106,32,2,0,14,Yes,1,loss
+49,30/06/2018,Kazan Arena,Knockout,FRANCE,Europe,9,0,0,0.41,0.84,97,35,3,0,21,ARGENTINA,South America,9,4,1,0.59,0.86,96,28,5,0,15,Yes,7,win
+50,30/06/2018,Fisht Stadium,Knockout,URUGUAY,South America,6,2,0,0.39,0.7,106,40,0,0,13,PORTUGAL,Europe,20,10,1,0.61,0.84,107,41,1,0,13,Yes,3,win
+51,1/7/2018,Luzhniki Stadium,Knockout,SPAIN,Europe,25,6,1,0.75,0.91,137,42,1,0,5,RUSSIA,Europe,6,5,1,0.25,0.72,146,43,2,0,19,No,2,draw
+52,1/7/2018,Nizhny Novgorod Stadium,Knockout,CROATIA,Europe,22,5,2,0.54,0.81,132,54,0,0,5,DENMARK,Europe,15,4,0,0.46,0.79,135,47,1,0,19,No,2,draw
+53,2/7/2018,Samara Arena,Knockout,BRAZIL,South America,21,8,0,0.47,0.83,92,38,2,0,6,MEXICO,North America,13,7,2,0.53,0.85,89,34,4,0,18,Yes,2,win
+54,2/7/2018,Rostov Arena,Knockout,BELGIUM,Europe,24,10,1,0.56,0.87,108,28,0,0,13,JAPAN,Asia,11,6,1,0.44,0.83,109,40,1,0,9,Yes,5,win
+55,3/7/2018,Saint Petersburg Stadium,Knockout,SWEDEN,Europe,12,3,1,0.37,0.73,105,47,1,0,11,SWITZERLAND,Europe,18,11,0,0.63,0.84,103,72,2,1,13,Yes,1,win
+56,3/7/2018,Spartak Stadium,Knockout,COLOMBIA,South America,14,2,1,0.49,0.78,136,59,6,0,23,ENGLAND,Europe,16,7,2,0.51,0.82,143,59,2,0,13,No,2,draw
+57,6/7/2018,Nizhny Novgorod Stadium,Knockout,URUGUAY,South America,11,4,0,0.42,0.67,103,45,2,0,17,FRANCE,Europe,11,3,0,0.58,0.81,99,48,2,0,15,Yes,2,loss
+58,6/7/2018,Kazan Arena,Knockout,BRAZIL,South America,26,8,1,0.57,0.89,104,41,2,0,14,BELGIUM,Europe,8,4,0,0.43,0.83,105,35,2,0,16,Yes,3,loss
+59,7/7/2018,Samara Arena,Knockout,SWEDEN,Europe,7,1,2,0.43,0.74,107,36,2,0,10,ENGLAND,Europe,12,6,1,0.57,0.8,110,47,1,0,7,Yes,2,loss
+60,7/7/2018,Fisht Stadium,Knockout,RUSSIA,Europe,13,6,1,0.38,0.69,148,63,1,0,25,CROATIA,Europe,17,8,0,0.62,0.82,139,58,4,0,18,No,4,draw
+61,10/7/2018,Saint Petersburg Stadium,Knockout,FRANCE,Europe,19,4,1,0.4,0.86,102,44,2,0,6,BELGIUM,Europe,9,5,1,0.6,0.9,102,34,3,0,16,Yes,1,win
+62,11/7/2018,Luzhniki Stadium,Knockout,CROATIA,Europe,22,8,1,0.54,0.79,143,51,2,0,23,ENGLAND,Europe,11,4,3,0.46,0.78,148,48,1,0,14,No,3,win
+63,14/07/2018,Saint Petersburg Stadium,Knockout,BELGIUM,Europe,12,4,1,0.43,0.88,108,34,1,0,11,ENGLAND,Europe,15,5,0,0.57,0.92,110,31,2,0,5,Yes,2,win
+64,15/07/2018,Luzhniki Stadium,Knockout,FRANCE,Europe,8,2,1,0.39,0.75,99,45,2,0,14,CROATIA,Europe,15,6,1,0.61,0.83,100,45,1,0,13,Yes,6,win

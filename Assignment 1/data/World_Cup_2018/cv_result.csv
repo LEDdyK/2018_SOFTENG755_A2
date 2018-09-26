@@ -1,0 +1,17 @@
+Method,Params,CV,NumberOfCV
+LM,"{'normalize': True, 'fit_intercept': True}",1.2638008282986353,28
+LM,"{'normalize': False, 'fit_intercept': True}",1.2638008282986668,28
+LM,"{'normalize': True, 'fit_intercept': False}",1.3775919957888156,28
+LM,"{'normalize': False, 'fit_intercept': False}",1.3775919957888156,28
+Ridge,"{'normalize': True, 'alpha': 1.0, 'fit_intercept': True}",0.7725786437585458,28
+Ridge,"{'normalize': True, 'alpha': 0.0031622776601683794, 'fit_intercept': True}",1.2319142263922231,28
+Ridge,"{'normalize': True, 'alpha': 1e-05, 'fit_intercept': True}",1.2613329353681144,28
+Ridge,"{'normalize': False, 'alpha': 1e-05, 'fit_intercept': True}",1.2838118337824531,28
+Ridge,"{'normalize': False, 'alpha': 1.0, 'fit_intercept': True}",1.3169244722632252,28
+Ridge,"{'normalize': False, 'alpha': 0.0031622776601683794, 'fit_intercept': True}",1.3421409653845926,28
+Ridge,"{'normalize': True, 'alpha': 1e-05, 'fit_intercept': False}",1.3796646598818714,28
+Ridge,"{'normalize': False, 'alpha': 1e-05, 'fit_intercept': False}",1.3796646598818714,28
+Ridge,"{'normalize': True, 'alpha': 1.0, 'fit_intercept': False}",1.398308023239219,28
+Ridge,"{'normalize': False, 'alpha': 1.0, 'fit_intercept': False}",1.398308023239219,28
+Ridge,"{'normalize': True, 'alpha': 0.0031622776601683794, 'fit_intercept': False}",1.566418790765578,28
+Ridge,"{'normalize': False, 'alpha': 0.0031622776601683794, 'fit_intercept': False}",1.566418790765578,28

@@ -1,0 +1,1198 @@
+index,paras,rt_name,sl_name,fe_name,method,mean_validation_score
+0,{'n_neighbors': 14},MinMax,MinMax,Identity,KNN,0.8127777777777778
+1,{'n_neighbors': 20},MinMax,MinMax,Identity,KNN,0.8101851851851852
+2,{'n_neighbors': 26},MinMax,MinMax,Identity,KNN,0.807962962962963
+3,{'n_neighbors': 8},MinMax,MinMax,Identity,KNN,0.8064814814814815
+4,{'n_neighbors': 2},MinMax,MinMax,Identity,KNN,0.7707407407407407
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,MinMax,Identity,NB,0.7383333333333333
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,MinMax,Identity,NB,0.7357407407407407
+0,{'alpha': 0.00017782794100389227},MinMax,MinMax,Identity,Perceptron,0.6881481481481482
+1,{'alpha': 1e-05},MinMax,MinMax,Identity,Perceptron,0.6570370370370371
+2,{'alpha': 0.0031622776601683794},MinMax,MinMax,Identity,Perceptron,0.5925925925925926
+3,{'alpha': 0.05623413251903491},MinMax,MinMax,Identity,Perceptron,0.28888888888888886
+4,{'alpha': 1.0},MinMax,MinMax,Identity,Perceptron,0.22018518518518518
+0,{'max_depth': 7},MinMax,MinMax,Identity,DT,0.7587037037037037
+1,{'max_depth': 9},MinMax,MinMax,Identity,DT,0.7568518518518519
+2,{'max_depth': 11},MinMax,MinMax,Identity,DT,0.7507407407407407
+3,{'max_depth': 5},MinMax,MinMax,Identity,DT,0.7385185185185185
+4,{'max_depth': 3},MinMax,MinMax,Identity,DT,0.6896296296296296
+5,{'max_depth': 1},MinMax,MinMax,Identity,DT,0.4387037037037037
+0,{'n_neighbors': 26},MinMax,MinMax,BestK1,KNN,0.7177777777777777
+1,{'n_neighbors': 14},MinMax,MinMax,BestK1,KNN,0.7146296296296296
+2,{'n_neighbors': 20},MinMax,MinMax,BestK1,KNN,0.7144444444444444
+3,{'n_neighbors': 8},MinMax,MinMax,BestK1,KNN,0.7022222222222222
+4,{'n_neighbors': 2},MinMax,MinMax,BestK1,KNN,0.6542592592592592
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,MinMax,BestK1,NB,0.6525925925925926
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,MinMax,BestK1,NB,0.6518518518518519
+0,{'alpha': 0.00017782794100389227},MinMax,MinMax,BestK1,Perceptron,0.5801851851851851
+1,{'alpha': 1e-05},MinMax,MinMax,BestK1,Perceptron,0.5459259259259259
+2,{'alpha': 0.0031622776601683794},MinMax,MinMax,BestK1,Perceptron,0.47814814814814816
+3,{'alpha': 0.05623413251903491},MinMax,MinMax,BestK1,Perceptron,0.33611111111111114
+4,{'alpha': 1.0},MinMax,MinMax,BestK1,Perceptron,0.22018518518518518
+0,{'max_depth': 9},MinMax,MinMax,BestK1,DT,0.6788888888888889
+1,{'max_depth': 7},MinMax,MinMax,BestK1,DT,0.6785185185185185
+2,{'max_depth': 5},MinMax,MinMax,BestK1,DT,0.6672222222222223
+3,{'max_depth': 11},MinMax,MinMax,BestK1,DT,0.6616666666666666
+4,{'max_depth': 3},MinMax,MinMax,BestK1,DT,0.6477777777777778
+5,{'max_depth': 1},MinMax,MinMax,BestK1,DT,0.4387037037037037
+0,{'n_neighbors': 14},MinMax,MinMax,BestK3,KNN,0.7996296296296296
+1,{'n_neighbors': 20},MinMax,MinMax,BestK3,KNN,0.7994444444444444
+2,{'n_neighbors': 8},MinMax,MinMax,BestK3,KNN,0.7966666666666666
+3,{'n_neighbors': 26},MinMax,MinMax,BestK3,KNN,0.7959259259259259
+4,{'n_neighbors': 2},MinMax,MinMax,BestK3,KNN,0.7518518518518519
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,MinMax,BestK3,NB,0.7296296296296296
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,MinMax,BestK3,NB,0.7281481481481481
+0,{'alpha': 1e-05},MinMax,MinMax,BestK3,Perceptron,0.6607407407407407
+1,{'alpha': 0.00017782794100389227},MinMax,MinMax,BestK3,Perceptron,0.6074074074074074
+2,{'alpha': 0.0031622776601683794},MinMax,MinMax,BestK3,Perceptron,0.5353703703703704
+3,{'alpha': 0.05623413251903491},MinMax,MinMax,BestK3,Perceptron,0.2674074074074074
+4,{'alpha': 1.0},MinMax,MinMax,BestK3,Perceptron,0.22018518518518518
+0,{'max_depth': 9},MinMax,MinMax,BestK3,DT,0.7505555555555555
+1,{'max_depth': 11},MinMax,MinMax,BestK3,DT,0.7462962962962963
+2,{'max_depth': 7},MinMax,MinMax,BestK3,DT,0.7414814814814815
+3,{'max_depth': 5},MinMax,MinMax,BestK3,DT,0.7153703703703703
+4,{'max_depth': 3},MinMax,MinMax,BestK3,DT,0.6511111111111111
+5,{'max_depth': 1},MinMax,MinMax,BestK3,DT,0.4387037037037037
+0,{'n_neighbors': 8},MinMax,MinMax,BestK2,KNN,0.7683333333333333
+1,{'n_neighbors': 14},MinMax,MinMax,BestK2,KNN,0.7637037037037037
+2,{'n_neighbors': 20},MinMax,MinMax,BestK2,KNN,0.7583333333333333
+3,{'n_neighbors': 26},MinMax,MinMax,BestK2,KNN,0.7570370370370371
+4,{'n_neighbors': 2},MinMax,MinMax,BestK2,KNN,0.7237037037037037
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,MinMax,BestK2,NB,0.6953703703703704
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,MinMax,BestK2,NB,0.6946296296296296
+0,{'alpha': 1e-05},MinMax,MinMax,BestK2,Perceptron,0.6031481481481481
+1,{'alpha': 0.0031622776601683794},MinMax,MinMax,BestK2,Perceptron,0.5687037037037037
+2,{'alpha': 0.00017782794100389227},MinMax,MinMax,BestK2,Perceptron,0.527962962962963
+3,{'alpha': 0.05623413251903491},MinMax,MinMax,BestK2,Perceptron,0.3138888888888889
+4,{'alpha': 1.0},MinMax,MinMax,BestK2,Perceptron,0.22018518518518518
+0,{'max_depth': 9},MinMax,MinMax,BestK2,DT,0.7077777777777777
+1,{'max_depth': 11},MinMax,MinMax,BestK2,DT,0.7066666666666667
+2,{'max_depth': 7},MinMax,MinMax,BestK2,DT,0.7031481481481482
+3,{'max_depth': 5},MinMax,MinMax,BestK2,DT,0.685
+4,{'max_depth': 3},MinMax,MinMax,BestK2,DT,0.6448148148148148
+5,{'max_depth': 1},MinMax,MinMax,BestK2,DT,0.4387037037037037
+0,{'n_neighbors': 26},MinMax,MinMax,PCA1,KNN,0.7735185185185185
+1,{'n_neighbors': 20},MinMax,MinMax,PCA1,KNN,0.7716666666666666
+2,{'n_neighbors': 14},MinMax,MinMax,PCA1,KNN,0.7677777777777778
+3,{'n_neighbors': 8},MinMax,MinMax,PCA1,KNN,0.7648148148148148
+4,{'n_neighbors': 2},MinMax,MinMax,PCA1,KNN,0.7107407407407408
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,MinMax,PCA1,NB,0.7398148148148148
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,MinMax,PCA1,NB,0.7298148148148148
+0,{'alpha': 1e-05},MinMax,MinMax,PCA1,Perceptron,0.6083333333333333
+1,{'alpha': 0.00017782794100389227},MinMax,MinMax,PCA1,Perceptron,0.6079629629629629
+2,{'alpha': 0.0031622776601683794},MinMax,MinMax,PCA1,Perceptron,0.5222222222222223
+3,{'alpha': 0.05623413251903491},MinMax,MinMax,PCA1,Perceptron,0.462037037037037
+4,{'alpha': 1.0},MinMax,MinMax,PCA1,Perceptron,0.2387037037037037
+0,{'max_depth': 7},MinMax,MinMax,PCA1,DT,0.7627777777777778
+1,{'max_depth': 5},MinMax,MinMax,PCA1,DT,0.7590740740740741
+2,{'max_depth': 9},MinMax,MinMax,PCA1,DT,0.7540740740740741
+3,{'max_depth': 3},MinMax,MinMax,PCA1,DT,0.7405555555555555
+4,{'max_depth': 11},MinMax,MinMax,PCA1,DT,0.7374074074074074
+5,{'max_depth': 1},MinMax,MinMax,PCA1,DT,0.44203703703703706
+0,{'n_neighbors': 8},MinMax,MinMax,PCA2,KNN,0.8166666666666667
+1,{'n_neighbors': 20},MinMax,MinMax,PCA2,KNN,0.8166666666666667
+2,{'n_neighbors': 26},MinMax,MinMax,PCA2,KNN,0.815
+3,{'n_neighbors': 14},MinMax,MinMax,PCA2,KNN,0.8137037037037037
+4,{'n_neighbors': 2},MinMax,MinMax,PCA2,KNN,0.7872222222222223
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,MinMax,PCA2,NB,0.7481481481481481
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,MinMax,PCA2,NB,0.7398148148148148
+0,{'alpha': 1e-05},MinMax,MinMax,PCA2,Perceptron,0.6833333333333333
+1,{'alpha': 0.00017782794100389227},MinMax,MinMax,PCA2,Perceptron,0.667037037037037
+2,{'alpha': 0.0031622776601683794},MinMax,MinMax,PCA2,Perceptron,0.6222222222222222
+3,{'alpha': 0.05623413251903491},MinMax,MinMax,PCA2,Perceptron,0.4790740740740741
+4,{'alpha': 1.0},MinMax,MinMax,PCA2,Perceptron,0.23351851851851851
+0,{'max_depth': 7},MinMax,MinMax,PCA2,DT,0.794074074074074
+1,{'max_depth': 9},MinMax,MinMax,PCA2,DT,0.7911111111111111
+2,{'max_depth': 5},MinMax,MinMax,PCA2,DT,0.7881481481481482
+3,{'max_depth': 11},MinMax,MinMax,PCA2,DT,0.7831481481481481
+4,{'max_depth': 3},MinMax,MinMax,PCA2,DT,0.7394444444444445
+5,{'max_depth': 1},MinMax,MinMax,PCA2,DT,0.44203703703703706
+0,{'n_neighbors': 14},MinMax,MinMax,PCA3,KNN,0.8127777777777778
+1,{'n_neighbors': 20},MinMax,MinMax,PCA3,KNN,0.8101851851851852
+2,{'n_neighbors': 26},MinMax,MinMax,PCA3,KNN,0.807962962962963
+3,{'n_neighbors': 8},MinMax,MinMax,PCA3,KNN,0.8064814814814815
+4,{'n_neighbors': 2},MinMax,MinMax,PCA3,KNN,0.7707407407407407
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,MinMax,PCA3,NB,0.7581481481481481
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,MinMax,PCA3,NB,0.7535185185185185
+0,{'alpha': 0.00017782794100389227},MinMax,MinMax,PCA3,Perceptron,0.6888888888888889
+1,{'alpha': 1e-05},MinMax,MinMax,PCA3,Perceptron,0.677037037037037
+2,{'alpha': 0.0031622776601683794},MinMax,MinMax,PCA3,Perceptron,0.6305555555555555
+3,{'alpha': 0.05623413251903491},MinMax,MinMax,PCA3,Perceptron,0.4690740740740741
+4,{'alpha': 1.0},MinMax,MinMax,PCA3,Perceptron,0.23407407407407407
+0,{'max_depth': 7},MinMax,MinMax,PCA3,DT,0.7881481481481482
+1,{'max_depth': 5},MinMax,MinMax,PCA3,DT,0.7866666666666666
+2,{'max_depth': 9},MinMax,MinMax,PCA3,DT,0.784074074074074
+3,{'max_depth': 11},MinMax,MinMax,PCA3,DT,0.7762962962962963
+4,{'max_depth': 3},MinMax,MinMax,PCA3,DT,0.7394444444444445
+5,{'max_depth': 1},MinMax,MinMax,PCA3,DT,0.44203703703703706
+0,{'n_neighbors': 8},MinMax,ZScore,Identity,KNN,0.8066666666666666
+1,{'n_neighbors': 20},MinMax,ZScore,Identity,KNN,0.8062962962962963
+2,{'n_neighbors': 14},MinMax,ZScore,Identity,KNN,0.8051851851851852
+3,{'n_neighbors': 26},MinMax,ZScore,Identity,KNN,0.8005555555555556
+4,{'n_neighbors': 2},MinMax,ZScore,Identity,KNN,0.7696296296296297
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,ZScore,Identity,NB,0.7383333333333333
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,ZScore,Identity,NB,0.7357407407407407
+0,{'alpha': 1e-05},MinMax,ZScore,Identity,Perceptron,0.6898148148148148
+1,{'alpha': 0.00017782794100389227},MinMax,ZScore,Identity,Perceptron,0.6655555555555556
+2,{'alpha': 0.0031622776601683794},MinMax,ZScore,Identity,Perceptron,0.607037037037037
+3,{'alpha': 0.05623413251903491},MinMax,ZScore,Identity,Perceptron,0.5274074074074074
+4,{'alpha': 1.0},MinMax,ZScore,Identity,Perceptron,0.22907407407407407
+0,{'max_depth': 7},MinMax,ZScore,Identity,DT,0.7605555555555555
+1,{'max_depth': 11},MinMax,ZScore,Identity,DT,0.7575925925925926
+2,{'max_depth': 9},MinMax,ZScore,Identity,DT,0.7553703703703704
+3,{'max_depth': 5},MinMax,ZScore,Identity,DT,0.7388888888888889
+4,{'max_depth': 3},MinMax,ZScore,Identity,DT,0.6896296296296296
+5,{'max_depth': 1},MinMax,ZScore,Identity,DT,0.4387037037037037
+0,{'n_neighbors': 26},MinMax,ZScore,BestK1,KNN,0.7105555555555556
+1,{'n_neighbors': 20},MinMax,ZScore,BestK1,KNN,0.707037037037037
+2,{'n_neighbors': 14},MinMax,ZScore,BestK1,KNN,0.7038888888888889
+3,{'n_neighbors': 8},MinMax,ZScore,BestK1,KNN,0.6990740740740741
+4,{'n_neighbors': 2},MinMax,ZScore,BestK1,KNN,0.6438888888888888
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,ZScore,BestK1,NB,0.6525925925925926
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,ZScore,BestK1,NB,0.6518518518518519
+0,{'alpha': 0.00017782794100389227},MinMax,ZScore,BestK1,Perceptron,0.5659259259259259
+1,{'alpha': 1e-05},MinMax,ZScore,BestK1,Perceptron,0.5516666666666666
+2,{'alpha': 0.0031622776601683794},MinMax,ZScore,BestK1,Perceptron,0.5024074074074074
+3,{'alpha': 0.05623413251903491},MinMax,ZScore,BestK1,Perceptron,0.4551851851851852
+4,{'alpha': 1.0},MinMax,ZScore,BestK1,Perceptron,0.2064814814814815
+0,{'max_depth': 9},MinMax,ZScore,BestK1,DT,0.6785185185185185
+1,{'max_depth': 7},MinMax,ZScore,BestK1,DT,0.677962962962963
+2,{'max_depth': 5},MinMax,ZScore,BestK1,DT,0.6672222222222223
+3,{'max_depth': 11},MinMax,ZScore,BestK1,DT,0.6609259259259259
+4,{'max_depth': 3},MinMax,ZScore,BestK1,DT,0.6477777777777778
+5,{'max_depth': 1},MinMax,ZScore,BestK1,DT,0.4387037037037037
+0,{'n_neighbors': 20},MinMax,ZScore,BestK3,KNN,0.79
+1,{'n_neighbors': 14},MinMax,ZScore,BestK3,KNN,0.7883333333333333
+2,{'n_neighbors': 8},MinMax,ZScore,BestK3,KNN,0.7868518518518518
+3,{'n_neighbors': 26},MinMax,ZScore,BestK3,KNN,0.7861111111111111
+4,{'n_neighbors': 2},MinMax,ZScore,BestK3,KNN,0.7511111111111111
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,ZScore,BestK3,NB,0.7296296296296296
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,ZScore,BestK3,NB,0.7281481481481481
+0,{'alpha': 0.00017782794100389227},MinMax,ZScore,BestK3,Perceptron,0.6777777777777778
+1,{'alpha': 1e-05},MinMax,ZScore,BestK3,Perceptron,0.6638888888888889
+2,{'alpha': 0.0031622776601683794},MinMax,ZScore,BestK3,Perceptron,0.5994444444444444
+3,{'alpha': 0.05623413251903491},MinMax,ZScore,BestK3,Perceptron,0.4711111111111111
+4,{'alpha': 1.0},MinMax,ZScore,BestK3,Perceptron,0.24944444444444444
+0,{'max_depth': 9},MinMax,ZScore,BestK3,DT,0.7496296296296296
+1,{'max_depth': 11},MinMax,ZScore,BestK3,DT,0.7474074074074074
+2,{'max_depth': 7},MinMax,ZScore,BestK3,DT,0.7418518518518519
+3,{'max_depth': 5},MinMax,ZScore,BestK3,DT,0.7151851851851851
+4,{'max_depth': 3},MinMax,ZScore,BestK3,DT,0.6511111111111111
+5,{'max_depth': 1},MinMax,ZScore,BestK3,DT,0.4387037037037037
+0,{'n_neighbors': 8},MinMax,ZScore,BestK2,KNN,0.7651851851851852
+1,{'n_neighbors': 14},MinMax,ZScore,BestK2,KNN,0.765
+2,{'n_neighbors': 20},MinMax,ZScore,BestK2,KNN,0.7572222222222222
+3,{'n_neighbors': 26},MinMax,ZScore,BestK2,KNN,0.7555555555555555
+4,{'n_neighbors': 2},MinMax,ZScore,BestK2,KNN,0.7285185185185186
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,ZScore,BestK2,NB,0.6953703703703704
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,ZScore,BestK2,NB,0.6946296296296296
+0,{'alpha': 1e-05},MinMax,ZScore,BestK2,Perceptron,0.605925925925926
+1,{'alpha': 0.00017782794100389227},MinMax,ZScore,BestK2,Perceptron,0.5979629629629629
+2,{'alpha': 0.0031622776601683794},MinMax,ZScore,BestK2,Perceptron,0.585
+3,{'alpha': 0.05623413251903491},MinMax,ZScore,BestK2,Perceptron,0.46296296296296297
+4,{'alpha': 1.0},MinMax,ZScore,BestK2,Perceptron,0.25296296296296295
+0,{'max_depth': 9},MinMax,ZScore,BestK2,DT,0.7092592592592593
+1,{'max_depth': 7},MinMax,ZScore,BestK2,DT,0.7044444444444444
+2,{'max_depth': 11},MinMax,ZScore,BestK2,DT,0.7031481481481482
+3,{'max_depth': 5},MinMax,ZScore,BestK2,DT,0.6848148148148148
+4,{'max_depth': 3},MinMax,ZScore,BestK2,DT,0.6448148148148148
+5,{'max_depth': 1},MinMax,ZScore,BestK2,DT,0.4387037037037037
+0,{'n_neighbors': 20},MinMax,ZScore,PCA1,KNN,0.774074074074074
+1,{'n_neighbors': 26},MinMax,ZScore,PCA1,KNN,0.7722222222222223
+2,{'n_neighbors': 14},MinMax,ZScore,PCA1,KNN,0.7714814814814814
+3,{'n_neighbors': 8},MinMax,ZScore,PCA1,KNN,0.7642592592592593
+4,{'n_neighbors': 2},MinMax,ZScore,PCA1,KNN,0.71
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,ZScore,PCA1,NB,0.7392592592592593
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,ZScore,PCA1,NB,0.737037037037037
+0,{'alpha': 0.00017782794100389227},MinMax,ZScore,PCA1,Perceptron,0.6007407407407407
+1,{'alpha': 1e-05},MinMax,ZScore,PCA1,Perceptron,0.5994444444444444
+2,{'alpha': 0.0031622776601683794},MinMax,ZScore,PCA1,Perceptron,0.5748148148148148
+3,{'alpha': 0.05623413251903491},MinMax,ZScore,PCA1,Perceptron,0.49277777777777776
+4,{'alpha': 1.0},MinMax,ZScore,PCA1,Perceptron,0.2987037037037037
+0,{'max_depth': 7},MinMax,ZScore,PCA1,DT,0.7601851851851852
+1,{'max_depth': 5},MinMax,ZScore,PCA1,DT,0.7583333333333333
+2,{'max_depth': 9},MinMax,ZScore,PCA1,DT,0.7424074074074074
+3,{'max_depth': 3},MinMax,ZScore,PCA1,DT,0.7340740740740741
+4,{'max_depth': 11},MinMax,ZScore,PCA1,DT,0.7279629629629629
+5,{'max_depth': 1},MinMax,ZScore,PCA1,DT,0.4474074074074074
+0,{'n_neighbors': 8},MinMax,ZScore,PCA2,KNN,0.8081481481481482
+1,{'n_neighbors': 20},MinMax,ZScore,PCA2,KNN,0.807962962962963
+2,{'n_neighbors': 14},MinMax,ZScore,PCA2,KNN,0.8068518518518518
+3,{'n_neighbors': 26},MinMax,ZScore,PCA2,KNN,0.8064814814814815
+4,{'n_neighbors': 2},MinMax,ZScore,PCA2,KNN,0.7731481481481481
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,ZScore,PCA2,NB,0.7575925925925926
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,ZScore,PCA2,NB,0.7568518518518519
+0,{'alpha': 1e-05},MinMax,ZScore,PCA2,Perceptron,0.6764814814814815
+1,{'alpha': 0.00017782794100389227},MinMax,ZScore,PCA2,Perceptron,0.6668518518518518
+2,{'alpha': 0.0031622776601683794},MinMax,ZScore,PCA2,Perceptron,0.6140740740740741
+3,{'alpha': 0.05623413251903491},MinMax,ZScore,PCA2,Perceptron,0.49944444444444447
+4,{'alpha': 1.0},MinMax,ZScore,PCA2,Perceptron,0.22777777777777777
+0,{'max_depth': 7},MinMax,ZScore,PCA2,DT,0.782962962962963
+1,{'max_depth': 9},MinMax,ZScore,PCA2,DT,0.7816666666666666
+2,{'max_depth': 11},MinMax,ZScore,PCA2,DT,0.7801851851851852
+3,{'max_depth': 5},MinMax,ZScore,PCA2,DT,0.7646296296296297
+4,{'max_depth': 3},MinMax,ZScore,PCA2,DT,0.735
+5,{'max_depth': 1},MinMax,ZScore,PCA2,DT,0.4474074074074074
+0,{'n_neighbors': 8},MinMax,ZScore,PCA3,KNN,0.8066666666666666
+1,{'n_neighbors': 20},MinMax,ZScore,PCA3,KNN,0.8062962962962963
+2,{'n_neighbors': 14},MinMax,ZScore,PCA3,KNN,0.8051851851851852
+3,{'n_neighbors': 26},MinMax,ZScore,PCA3,KNN,0.8005555555555556
+4,{'n_neighbors': 2},MinMax,ZScore,PCA3,KNN,0.7696296296296297
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,ZScore,PCA3,NB,0.7620370370370371
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,ZScore,PCA3,NB,0.7601851851851852
+0,{'alpha': 1e-05},MinMax,ZScore,PCA3,Perceptron,0.6898148148148148
+1,{'alpha': 0.00017782794100389227},MinMax,ZScore,PCA3,Perceptron,0.6655555555555556
+2,{'alpha': 0.0031622776601683794},MinMax,ZScore,PCA3,Perceptron,0.607037037037037
+3,{'alpha': 0.05623413251903491},MinMax,ZScore,PCA3,Perceptron,0.5274074074074074
+4,{'alpha': 1.0},MinMax,ZScore,PCA3,Perceptron,0.22907407407407407
+0,{'max_depth': 7},MinMax,ZScore,PCA3,DT,0.7787037037037037
+1,{'max_depth': 9},MinMax,ZScore,PCA3,DT,0.7762962962962963
+2,{'max_depth': 11},MinMax,ZScore,PCA3,DT,0.7696296296296297
+3,{'max_depth': 5},MinMax,ZScore,PCA3,DT,0.7642592592592593
+4,{'max_depth': 3},MinMax,ZScore,PCA3,DT,0.735
+5,{'max_depth': 1},MinMax,ZScore,PCA3,DT,0.4474074074074074
+0,{'n_neighbors': 14},MinMax,Identity,Identity,KNN,0.8137037037037037
+1,{'n_neighbors': 20},MinMax,Identity,Identity,KNN,0.8127777777777778
+2,{'n_neighbors': 26},MinMax,Identity,Identity,KNN,0.81
+3,{'n_neighbors': 8},MinMax,Identity,Identity,KNN,0.8096296296296296
+4,{'n_neighbors': 2},MinMax,Identity,Identity,KNN,0.7718518518518519
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,Identity,Identity,NB,0.7383333333333333
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,Identity,Identity,NB,0.7357407407407407
+0,{'alpha': 1e-05},MinMax,Identity,Identity,Perceptron,0.6831481481481482
+1,{'alpha': 0.00017782794100389227},MinMax,Identity,Identity,Perceptron,0.6805555555555556
+2,{'alpha': 0.0031622776601683794},MinMax,Identity,Identity,Perceptron,0.4803703703703704
+3,{'alpha': 0.05623413251903491},MinMax,Identity,Identity,Perceptron,0.28555555555555556
+4,{'alpha': 1.0},MinMax,Identity,Identity,Perceptron,0.22018518518518518
+0,{'max_depth': 7},MinMax,Identity,Identity,DT,0.7609259259259259
+1,{'max_depth': 9},MinMax,Identity,Identity,DT,0.7555555555555555
+2,{'max_depth': 11},MinMax,Identity,Identity,DT,0.7501851851851852
+3,{'max_depth': 5},MinMax,Identity,Identity,DT,0.7388888888888889
+4,{'max_depth': 3},MinMax,Identity,Identity,DT,0.6896296296296296
+5,{'max_depth': 1},MinMax,Identity,Identity,DT,0.4387037037037037
+0,{'n_neighbors': 26},MinMax,Identity,BestK1,KNN,0.7183333333333334
+1,{'n_neighbors': 20},MinMax,Identity,BestK1,KNN,0.715925925925926
+2,{'n_neighbors': 14},MinMax,Identity,BestK1,KNN,0.710925925925926
+3,{'n_neighbors': 8},MinMax,Identity,BestK1,KNN,0.7048148148148148
+4,{'n_neighbors': 2},MinMax,Identity,BestK1,KNN,0.6537037037037037
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,Identity,BestK1,NB,0.6525925925925926
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,Identity,BestK1,NB,0.6518518518518519
+0,{'alpha': 1e-05},MinMax,Identity,BestK1,Perceptron,0.6051851851851852
+1,{'alpha': 0.00017782794100389227},MinMax,Identity,BestK1,Perceptron,0.5033333333333333
+2,{'alpha': 0.0031622776601683794},MinMax,Identity,BestK1,Perceptron,0.4825925925925926
+3,{'alpha': 0.05623413251903491},MinMax,Identity,BestK1,Perceptron,0.25333333333333335
+4,{'alpha': 1.0},MinMax,Identity,BestK1,Perceptron,0.22018518518518518
+0,{'max_depth': 9},MinMax,Identity,BestK1,DT,0.6803703703703704
+1,{'max_depth': 7},MinMax,Identity,BestK1,DT,0.679074074074074
+2,{'max_depth': 5},MinMax,Identity,BestK1,DT,0.6674074074074074
+3,{'max_depth': 11},MinMax,Identity,BestK1,DT,0.665
+4,{'max_depth': 3},MinMax,Identity,BestK1,DT,0.6477777777777778
+5,{'max_depth': 1},MinMax,Identity,BestK1,DT,0.4387037037037037
+0,{'n_neighbors': 20},MinMax,Identity,BestK3,KNN,0.8007407407407408
+1,{'n_neighbors': 14},MinMax,Identity,BestK3,KNN,0.8003703703703704
+2,{'n_neighbors': 8},MinMax,Identity,BestK3,KNN,0.7987037037037037
+3,{'n_neighbors': 26},MinMax,Identity,BestK3,KNN,0.797962962962963
+4,{'n_neighbors': 2},MinMax,Identity,BestK3,KNN,0.7585185185185185
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,Identity,BestK3,NB,0.7296296296296296
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,Identity,BestK3,NB,0.7281481481481481
+0,{'alpha': 1e-05},MinMax,Identity,BestK3,Perceptron,0.6707407407407407
+1,{'alpha': 0.00017782794100389227},MinMax,Identity,BestK3,Perceptron,0.6087037037037037
+2,{'alpha': 0.0031622776601683794},MinMax,Identity,BestK3,Perceptron,0.5461111111111111
+3,{'alpha': 0.05623413251903491},MinMax,Identity,BestK3,Perceptron,0.2625925925925926
+4,{'alpha': 1.0},MinMax,Identity,BestK3,Perceptron,0.22018518518518518
+0,{'max_depth': 9},MinMax,Identity,BestK3,DT,0.7483333333333333
+1,{'max_depth': 11},MinMax,Identity,BestK3,DT,0.7444444444444445
+2,{'max_depth': 7},MinMax,Identity,BestK3,DT,0.7411111111111112
+3,{'max_depth': 5},MinMax,Identity,BestK3,DT,0.715
+4,{'max_depth': 3},MinMax,Identity,BestK3,DT,0.6511111111111111
+5,{'max_depth': 1},MinMax,Identity,BestK3,DT,0.4387037037037037
+0,{'n_neighbors': 8},MinMax,Identity,BestK2,KNN,0.7677777777777778
+1,{'n_neighbors': 14},MinMax,Identity,BestK2,KNN,0.7637037037037037
+2,{'n_neighbors': 20},MinMax,Identity,BestK2,KNN,0.7575925925925926
+3,{'n_neighbors': 26},MinMax,Identity,BestK2,KNN,0.7538888888888889
+4,{'n_neighbors': 2},MinMax,Identity,BestK2,KNN,0.7238888888888889
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,Identity,BestK2,NB,0.6953703703703704
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,Identity,BestK2,NB,0.6946296296296296
+0,{'alpha': 0.0031622776601683794},MinMax,Identity,BestK2,Perceptron,0.5885185185185186
+1,{'alpha': 1e-05},MinMax,Identity,BestK2,Perceptron,0.5738888888888889
+2,{'alpha': 0.00017782794100389227},MinMax,Identity,BestK2,Perceptron,0.5518518518518518
+3,{'alpha': 0.05623413251903491},MinMax,Identity,BestK2,Perceptron,0.26722222222222225
+4,{'alpha': 1.0},MinMax,Identity,BestK2,Perceptron,0.22018518518518518
+0,{'max_depth': 9},MinMax,Identity,BestK2,DT,0.712037037037037
+1,{'max_depth': 11},MinMax,Identity,BestK2,DT,0.7075925925925926
+2,{'max_depth': 7},MinMax,Identity,BestK2,DT,0.7037037037037037
+3,{'max_depth': 5},MinMax,Identity,BestK2,DT,0.685
+4,{'max_depth': 3},MinMax,Identity,BestK2,DT,0.6448148148148148
+5,{'max_depth': 1},MinMax,Identity,BestK2,DT,0.4387037037037037
+0,{'n_neighbors': 20},MinMax,Identity,PCA1,KNN,0.752962962962963
+1,{'n_neighbors': 26},MinMax,Identity,PCA1,KNN,0.7518518518518519
+2,{'n_neighbors': 14},MinMax,Identity,PCA1,KNN,0.7464814814814815
+3,{'n_neighbors': 8},MinMax,Identity,PCA1,KNN,0.7342592592592593
+4,{'n_neighbors': 2},MinMax,Identity,PCA1,KNN,0.6835185185185185
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,Identity,PCA1,NB,0.7194444444444444
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,Identity,PCA1,NB,0.7168518518518519
+0,{'alpha': 1e-05},MinMax,Identity,PCA1,Perceptron,0.6087037037037037
+1,{'alpha': 0.0031622776601683794},MinMax,Identity,PCA1,Perceptron,0.6075925925925926
+2,{'alpha': 0.00017782794100389227},MinMax,Identity,PCA1,Perceptron,0.5783333333333334
+3,{'alpha': 0.05623413251903491},MinMax,Identity,PCA1,Perceptron,0.44222222222222224
+4,{'alpha': 1.0},MinMax,Identity,PCA1,Perceptron,0.22018518518518518
+0,{'max_depth': 5},MinMax,Identity,PCA1,DT,0.744074074074074
+1,{'max_depth': 7},MinMax,Identity,PCA1,DT,0.737037037037037
+2,{'max_depth': 3},MinMax,Identity,PCA1,DT,0.7287037037037037
+3,{'max_depth': 9},MinMax,Identity,PCA1,DT,0.725
+4,{'max_depth': 11},MinMax,Identity,PCA1,DT,0.7037037037037037
+5,{'max_depth': 1},MinMax,Identity,PCA1,DT,0.4414814814814815
+0,{'n_neighbors': 8},MinMax,Identity,PCA2,KNN,0.8235185185185185
+1,{'n_neighbors': 14},MinMax,Identity,PCA2,KNN,0.822962962962963
+2,{'n_neighbors': 20},MinMax,Identity,PCA2,KNN,0.8212962962962963
+3,{'n_neighbors': 26},MinMax,Identity,PCA2,KNN,0.8181481481481482
+4,{'n_neighbors': 2},MinMax,Identity,PCA2,KNN,0.7931481481481482
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,Identity,PCA2,NB,0.7433333333333333
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,Identity,PCA2,NB,0.7285185185185186
+0,{'alpha': 1e-05},MinMax,Identity,PCA2,Perceptron,0.6635185185185185
+1,{'alpha': 0.00017782794100389227},MinMax,Identity,PCA2,Perceptron,0.6633333333333333
+2,{'alpha': 0.0031622776601683794},MinMax,Identity,PCA2,Perceptron,0.6164814814814815
+3,{'alpha': 0.05623413251903491},MinMax,Identity,PCA2,Perceptron,0.42777777777777776
+4,{'alpha': 1.0},MinMax,Identity,PCA2,Perceptron,0.22425925925925927
+0,{'max_depth': 7},MinMax,Identity,PCA2,DT,0.7774074074074074
+1,{'max_depth': 9},MinMax,Identity,PCA2,DT,0.7709259259259259
+2,{'max_depth': 11},MinMax,Identity,PCA2,DT,0.7642592592592593
+3,{'max_depth': 5},MinMax,Identity,PCA2,DT,0.7637037037037037
+4,{'max_depth': 3},MinMax,Identity,PCA2,DT,0.7262962962962963
+5,{'max_depth': 1},MinMax,Identity,PCA2,DT,0.4414814814814815
+0,{'n_neighbors': 14},MinMax,Identity,PCA3,KNN,0.8137037037037037
+1,{'n_neighbors': 20},MinMax,Identity,PCA3,KNN,0.8127777777777778
+2,{'n_neighbors': 26},MinMax,Identity,PCA3,KNN,0.81
+3,{'n_neighbors': 8},MinMax,Identity,PCA3,KNN,0.8096296296296296
+4,{'n_neighbors': 2},MinMax,Identity,PCA3,KNN,0.7718518518518519
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",MinMax,Identity,PCA3,NB,0.7542592592592593
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",MinMax,Identity,PCA3,NB,0.7468518518518519
+0,{'alpha': 0.00017782794100389227},MinMax,Identity,PCA3,Perceptron,0.7024074074074074
+1,{'alpha': 1e-05},MinMax,Identity,PCA3,Perceptron,0.6866666666666666
+2,{'alpha': 0.0031622776601683794},MinMax,Identity,PCA3,Perceptron,0.6222222222222222
+3,{'alpha': 0.05623413251903491},MinMax,Identity,PCA3,Perceptron,0.4375925925925926
+4,{'alpha': 1.0},MinMax,Identity,PCA3,Perceptron,0.22425925925925927
+0,{'max_depth': 7},MinMax,Identity,PCA3,DT,0.7746296296296297
+1,{'max_depth': 9},MinMax,Identity,PCA3,DT,0.7633333333333333
+2,{'max_depth': 5},MinMax,Identity,PCA3,DT,0.7618518518518519
+3,{'max_depth': 11},MinMax,Identity,PCA3,DT,0.7546296296296297
+4,{'max_depth': 3},MinMax,Identity,PCA3,DT,0.7262962962962963
+5,{'max_depth': 1},MinMax,Identity,PCA3,DT,0.4414814814814815
+0,{'n_neighbors': 8},Max,MinMax,Identity,KNN,0.9001851851851852
+1,{'n_neighbors': 2},Max,MinMax,Identity,KNN,0.8981481481481481
+2,{'n_neighbors': 14},Max,MinMax,Identity,KNN,0.8922222222222222
+3,{'n_neighbors': 20},Max,MinMax,Identity,KNN,0.89
+4,{'n_neighbors': 26},Max,MinMax,Identity,KNN,0.8853703703703704
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,MinMax,Identity,NB,0.8018518518518518
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,MinMax,Identity,NB,0.8011111111111111
+0,{'alpha': 0.00017782794100389227},Max,MinMax,Identity,Perceptron,0.7855555555555556
+1,{'alpha': 1e-05},Max,MinMax,Identity,Perceptron,0.7618518518518519
+2,{'alpha': 0.0031622776601683794},Max,MinMax,Identity,Perceptron,0.6503703703703704
+3,{'alpha': 0.05623413251903491},Max,MinMax,Identity,Perceptron,0.3459259259259259
+4,{'alpha': 1.0},Max,MinMax,Identity,Perceptron,0.22018518518518518
+0,{'max_depth': 7},Max,MinMax,Identity,DT,0.8587037037037037
+1,{'max_depth': 9},Max,MinMax,Identity,DT,0.8585185185185186
+2,{'max_depth': 11},Max,MinMax,Identity,DT,0.8538888888888889
+3,{'max_depth': 5},Max,MinMax,Identity,DT,0.8198148148148148
+4,{'max_depth': 3},Max,MinMax,Identity,DT,0.7755555555555556
+5,{'max_depth': 1},Max,MinMax,Identity,DT,0.43333333333333335
+0,{'n_neighbors': 8},Max,MinMax,BestK1,KNN,0.6687037037037037
+1,{'n_neighbors': 14},Max,MinMax,BestK1,KNN,0.6624074074074074
+2,{'n_neighbors': 20},Max,MinMax,BestK1,KNN,0.6525925925925926
+3,{'n_neighbors': 26},Max,MinMax,BestK1,KNN,0.6525925925925926
+4,{'n_neighbors': 2},Max,MinMax,BestK1,KNN,0.6012962962962963
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,MinMax,BestK1,NB,0.5516666666666666
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,MinMax,BestK1,NB,0.5505555555555556
+0,{'alpha': 1e-05},Max,MinMax,BestK1,Perceptron,0.502962962962963
+1,{'alpha': 0.00017782794100389227},Max,MinMax,BestK1,Perceptron,0.4822222222222222
+2,{'alpha': 0.0031622776601683794},Max,MinMax,BestK1,Perceptron,0.38722222222222225
+3,{'alpha': 0.05623413251903491},Max,MinMax,BestK1,Perceptron,0.2872222222222222
+4,{'alpha': 1.0},Max,MinMax,BestK1,Perceptron,0.22018518518518518
+0,{'max_depth': 7},Max,MinMax,BestK1,DT,0.6703703703703704
+1,{'max_depth': 11},Max,MinMax,BestK1,DT,0.6672222222222223
+2,{'max_depth': 9},Max,MinMax,BestK1,DT,0.6664814814814815
+3,{'max_depth': 5},Max,MinMax,BestK1,DT,0.6453703703703704
+4,{'max_depth': 3},Max,MinMax,BestK1,DT,0.5977777777777777
+5,{'max_depth': 1},Max,MinMax,BestK1,DT,0.43666666666666665
+0,{'n_neighbors': 8},Max,MinMax,BestK3,KNN,0.897962962962963
+1,{'n_neighbors': 14},Max,MinMax,BestK3,KNN,0.8905555555555555
+2,{'n_neighbors': 2},Max,MinMax,BestK3,KNN,0.8901851851851852
+3,{'n_neighbors': 20},Max,MinMax,BestK3,KNN,0.8875925925925926
+4,{'n_neighbors': 26},Max,MinMax,BestK3,KNN,0.8835185185185185
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,MinMax,BestK3,NB,0.7872222222222223
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,MinMax,BestK3,NB,0.7862962962962963
+0,{'alpha': 1e-05},Max,MinMax,BestK3,Perceptron,0.7572222222222222
+1,{'alpha': 0.00017782794100389227},Max,MinMax,BestK3,Perceptron,0.7372222222222222
+2,{'alpha': 0.0031622776601683794},Max,MinMax,BestK3,Perceptron,0.6055555555555555
+3,{'alpha': 0.05623413251903491},Max,MinMax,BestK3,Perceptron,0.32555555555555554
+4,{'alpha': 1.0},Max,MinMax,BestK3,Perceptron,0.22018518518518518
+0,{'max_depth': 7},Max,MinMax,BestK3,DT,0.8568518518518519
+1,{'max_depth': 9},Max,MinMax,BestK3,DT,0.8561111111111112
+2,{'max_depth': 11},Max,MinMax,BestK3,DT,0.8501851851851852
+3,{'max_depth': 5},Max,MinMax,BestK3,DT,0.8096296296296296
+4,{'max_depth': 3},Max,MinMax,BestK3,DT,0.7588888888888888
+5,{'max_depth': 1},Max,MinMax,BestK3,DT,0.4225925925925926
+0,{'n_neighbors': 14},Max,MinMax,BestK2,KNN,0.8331481481481482
+1,{'n_neighbors': 8},Max,MinMax,BestK2,KNN,0.8327777777777777
+2,{'n_neighbors': 20},Max,MinMax,BestK2,KNN,0.8212962962962963
+3,{'n_neighbors': 2},Max,MinMax,BestK2,KNN,0.8211111111111111
+4,{'n_neighbors': 26},Max,MinMax,BestK2,KNN,0.8125925925925926
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,MinMax,BestK2,NB,0.6842592592592592
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,MinMax,BestK2,NB,0.6812962962962963
+0,{'alpha': 1e-05},Max,MinMax,BestK2,Perceptron,0.5662962962962963
+1,{'alpha': 0.00017782794100389227},Max,MinMax,BestK2,Perceptron,0.5446296296296296
+2,{'alpha': 0.0031622776601683794},Max,MinMax,BestK2,Perceptron,0.48074074074074075
+3,{'alpha': 0.05623413251903491},Max,MinMax,BestK2,Perceptron,0.3048148148148148
+4,{'alpha': 1.0},Max,MinMax,BestK2,Perceptron,0.22018518518518518
+0,{'max_depth': 11},Max,MinMax,BestK2,DT,0.8116666666666666
+1,{'max_depth': 9},Max,MinMax,BestK2,DT,0.8087037037037037
+2,{'max_depth': 7},Max,MinMax,BestK2,DT,0.7938888888888889
+3,{'max_depth': 5},Max,MinMax,BestK2,DT,0.7583333333333333
+4,{'max_depth': 3},Max,MinMax,BestK2,DT,0.6531481481481481
+5,{'max_depth': 1},Max,MinMax,BestK2,DT,0.43666666666666665
+0,{'n_neighbors': 14},Max,MinMax,PCA1,KNN,0.8377777777777777
+1,{'n_neighbors': 20},Max,MinMax,PCA1,KNN,0.8375925925925926
+2,{'n_neighbors': 8},Max,MinMax,PCA1,KNN,0.8374074074074074
+3,{'n_neighbors': 26},Max,MinMax,PCA1,KNN,0.8364814814814815
+4,{'n_neighbors': 2},Max,MinMax,PCA1,KNN,0.8035185185185185
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,MinMax,PCA1,NB,0.7885185185185185
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,MinMax,PCA1,NB,0.7792592592592592
+0,{'alpha': 1e-05},Max,MinMax,PCA1,Perceptron,0.667962962962963
+1,{'alpha': 0.00017782794100389227},Max,MinMax,PCA1,Perceptron,0.6592592592592592
+2,{'alpha': 0.0031622776601683794},Max,MinMax,PCA1,Perceptron,0.5994444444444444
+3,{'alpha': 0.05623413251903491},Max,MinMax,PCA1,Perceptron,0.4537037037037037
+4,{'alpha': 1.0},Max,MinMax,PCA1,Perceptron,0.3296296296296296
+0,{'max_depth': 9},Max,MinMax,PCA1,DT,0.8214814814814815
+1,{'max_depth': 7},Max,MinMax,PCA1,DT,0.8207407407407408
+2,{'max_depth': 11},Max,MinMax,PCA1,DT,0.807037037037037
+3,{'max_depth': 5},Max,MinMax,PCA1,DT,0.8062962962962963
+4,{'max_depth': 3},Max,MinMax,PCA1,DT,0.7585185185185185
+5,{'max_depth': 1},Max,MinMax,PCA1,DT,0.44425925925925924
+0,{'n_neighbors': 8},Max,MinMax,PCA2,KNN,0.8957407407407407
+1,{'n_neighbors': 14},Max,MinMax,PCA2,KNN,0.8901851851851852
+2,{'n_neighbors': 20},Max,MinMax,PCA2,KNN,0.8842592592592593
+3,{'n_neighbors': 2},Max,MinMax,PCA2,KNN,0.8820370370370371
+4,{'n_neighbors': 26},Max,MinMax,PCA2,KNN,0.8818518518518519
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,MinMax,PCA2,NB,0.8422222222222222
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,MinMax,PCA2,NB,0.8403703703703703
+0,{'alpha': 1e-05},Max,MinMax,PCA2,Perceptron,0.762962962962963
+1,{'alpha': 0.0031622776601683794},Max,MinMax,PCA2,Perceptron,0.7166666666666667
+2,{'alpha': 0.00017782794100389227},Max,MinMax,PCA2,Perceptron,0.6931481481481482
+3,{'alpha': 0.05623413251903491},Max,MinMax,PCA2,Perceptron,0.4925925925925926
+4,{'alpha': 1.0},Max,MinMax,PCA2,Perceptron,0.3512962962962963
+0,{'max_depth': 11},Max,MinMax,PCA2,DT,0.8590740740740741
+1,{'max_depth': 9},Max,MinMax,PCA2,DT,0.8574074074074074
+2,{'max_depth': 7},Max,MinMax,PCA2,DT,0.8483333333333334
+3,{'max_depth': 5},Max,MinMax,PCA2,DT,0.82
+4,{'max_depth': 3},Max,MinMax,PCA2,DT,0.7568518518518519
+5,{'max_depth': 1},Max,MinMax,PCA2,DT,0.45185185185185184
+0,{'n_neighbors': 8},Max,MinMax,PCA3,KNN,0.9001851851851852
+1,{'n_neighbors': 2},Max,MinMax,PCA3,KNN,0.8981481481481481
+2,{'n_neighbors': 14},Max,MinMax,PCA3,KNN,0.8922222222222222
+3,{'n_neighbors': 20},Max,MinMax,PCA3,KNN,0.89
+4,{'n_neighbors': 26},Max,MinMax,PCA3,KNN,0.8853703703703704
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,MinMax,PCA3,NB,0.842037037037037
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,MinMax,PCA3,NB,0.8418518518518519
+0,{'alpha': 1e-05},Max,MinMax,PCA3,Perceptron,0.7570370370370371
+1,{'alpha': 0.00017782794100389227},Max,MinMax,PCA3,Perceptron,0.7440740740740741
+2,{'alpha': 0.0031622776601683794},Max,MinMax,PCA3,Perceptron,0.6888888888888889
+3,{'alpha': 0.05623413251903491},Max,MinMax,PCA3,Perceptron,0.49018518518518517
+4,{'alpha': 1.0},Max,MinMax,PCA3,Perceptron,0.3503703703703704
+0,{'max_depth': 11},Max,MinMax,PCA3,DT,0.8522222222222222
+1,{'max_depth': 9},Max,MinMax,PCA3,DT,0.8514814814814815
+2,{'max_depth': 7},Max,MinMax,PCA3,DT,0.8457407407407408
+3,{'max_depth': 5},Max,MinMax,PCA3,DT,0.8185185185185185
+4,{'max_depth': 3},Max,MinMax,PCA3,DT,0.7561111111111111
+5,{'max_depth': 1},Max,MinMax,PCA3,DT,0.45185185185185184
+0,{'n_neighbors': 8},Max,ZScore,Identity,KNN,0.8988888888888888
+1,{'n_neighbors': 2},Max,ZScore,Identity,KNN,0.8959259259259259
+2,{'n_neighbors': 14},Max,ZScore,Identity,KNN,0.8946296296296297
+3,{'n_neighbors': 20},Max,ZScore,Identity,KNN,0.8898148148148148
+4,{'n_neighbors': 26},Max,ZScore,Identity,KNN,0.8859259259259259
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,ZScore,Identity,NB,0.8018518518518518
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,ZScore,Identity,NB,0.8011111111111111
+0,{'alpha': 1e-05},Max,ZScore,Identity,Perceptron,0.7616666666666667
+1,{'alpha': 0.00017782794100389227},Max,ZScore,Identity,Perceptron,0.7572222222222222
+2,{'alpha': 0.0031622776601683794},Max,ZScore,Identity,Perceptron,0.7148148148148148
+3,{'alpha': 0.05623413251903491},Max,ZScore,Identity,Perceptron,0.6003703703703703
+4,{'alpha': 1.0},Max,ZScore,Identity,Perceptron,0.24944444444444444
+0,{'max_depth': 9},Max,ZScore,Identity,DT,0.8616666666666667
+1,{'max_depth': 7},Max,ZScore,Identity,DT,0.8581481481481481
+2,{'max_depth': 11},Max,ZScore,Identity,DT,0.8568518518518519
+3,{'max_depth': 5},Max,ZScore,Identity,DT,0.8201851851851852
+4,{'max_depth': 3},Max,ZScore,Identity,DT,0.7755555555555556
+5,{'max_depth': 1},Max,ZScore,Identity,DT,0.43333333333333335
+0,{'n_neighbors': 8},Max,ZScore,BestK1,KNN,0.6737037037037037
+1,{'n_neighbors': 14},Max,ZScore,BestK1,KNN,0.6655555555555556
+2,{'n_neighbors': 20},Max,ZScore,BestK1,KNN,0.6612962962962963
+3,{'n_neighbors': 26},Max,ZScore,BestK1,KNN,0.6581481481481481
+4,{'n_neighbors': 2},Max,ZScore,BestK1,KNN,0.6125925925925926
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,ZScore,BestK1,NB,0.5516666666666666
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,ZScore,BestK1,NB,0.5505555555555556
+0,{'alpha': 0.00017782794100389227},Max,ZScore,BestK1,Perceptron,0.5162962962962963
+1,{'alpha': 0.0031622776601683794},Max,ZScore,BestK1,Perceptron,0.49592592592592594
+2,{'alpha': 1e-05},Max,ZScore,BestK1,Perceptron,0.47314814814814815
+3,{'alpha': 0.05623413251903491},Max,ZScore,BestK1,Perceptron,0.4096296296296296
+4,{'alpha': 1.0},Max,ZScore,BestK1,Perceptron,0.1274074074074074
+0,{'max_depth': 7},Max,ZScore,BestK1,DT,0.6705555555555556
+1,{'max_depth': 9},Max,ZScore,BestK1,DT,0.6661111111111111
+2,{'max_depth': 11},Max,ZScore,BestK1,DT,0.6655555555555556
+3,{'max_depth': 5},Max,ZScore,BestK1,DT,0.6453703703703704
+4,{'max_depth': 3},Max,ZScore,BestK1,DT,0.5977777777777777
+5,{'max_depth': 1},Max,ZScore,BestK1,DT,0.43666666666666665
+0,{'n_neighbors': 8},Max,ZScore,BestK3,KNN,0.8951851851851852
+1,{'n_neighbors': 2},Max,ZScore,BestK3,KNN,0.8933333333333333
+2,{'n_neighbors': 14},Max,ZScore,BestK3,KNN,0.8907407407407407
+3,{'n_neighbors': 20},Max,ZScore,BestK3,KNN,0.8861111111111111
+4,{'n_neighbors': 26},Max,ZScore,BestK3,KNN,0.8833333333333333
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,ZScore,BestK3,NB,0.7872222222222223
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,ZScore,BestK3,NB,0.7862962962962963
+0,{'alpha': 1e-05},Max,ZScore,BestK3,Perceptron,0.7572222222222222
+1,{'alpha': 0.00017782794100389227},Max,ZScore,BestK3,Perceptron,0.7398148148148148
+2,{'alpha': 0.0031622776601683794},Max,ZScore,BestK3,Perceptron,0.6861111111111111
+3,{'alpha': 0.05623413251903491},Max,ZScore,BestK3,Perceptron,0.47685185185185186
+4,{'alpha': 1.0},Max,ZScore,BestK3,Perceptron,0.2087037037037037
+0,{'max_depth': 7},Max,ZScore,BestK3,DT,0.8562962962962963
+1,{'max_depth': 9},Max,ZScore,BestK3,DT,0.8544444444444445
+2,{'max_depth': 11},Max,ZScore,BestK3,DT,0.8472222222222222
+3,{'max_depth': 5},Max,ZScore,BestK3,DT,0.8081481481481482
+4,{'max_depth': 3},Max,ZScore,BestK3,DT,0.7588888888888888
+5,{'max_depth': 1},Max,ZScore,BestK3,DT,0.4225925925925926
+0,{'n_neighbors': 8},Max,ZScore,BestK2,KNN,0.835925925925926
+1,{'n_neighbors': 14},Max,ZScore,BestK2,KNN,0.8251851851851851
+2,{'n_neighbors': 2},Max,ZScore,BestK2,KNN,0.8175925925925925
+3,{'n_neighbors': 20},Max,ZScore,BestK2,KNN,0.817037037037037
+4,{'n_neighbors': 26},Max,ZScore,BestK2,KNN,0.8090740740740741
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,ZScore,BestK2,NB,0.6842592592592592
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,ZScore,BestK2,NB,0.6812962962962963
+0,{'alpha': 1e-05},Max,ZScore,BestK2,Perceptron,0.6068518518518519
+1,{'alpha': 0.00017782794100389227},Max,ZScore,BestK2,Perceptron,0.5822222222222222
+2,{'alpha': 0.0031622776601683794},Max,ZScore,BestK2,Perceptron,0.542037037037037
+3,{'alpha': 0.05623413251903491},Max,ZScore,BestK2,Perceptron,0.4653703703703704
+4,{'alpha': 1.0},Max,ZScore,BestK2,Perceptron,0.15037037037037038
+0,{'max_depth': 11},Max,ZScore,BestK2,DT,0.8105555555555556
+1,{'max_depth': 9},Max,ZScore,BestK2,DT,0.8085185185185185
+2,{'max_depth': 7},Max,ZScore,BestK2,DT,0.7953703703703704
+3,{'max_depth': 5},Max,ZScore,BestK2,DT,0.757962962962963
+4,{'max_depth': 3},Max,ZScore,BestK2,DT,0.6535185185185185
+5,{'max_depth': 1},Max,ZScore,BestK2,DT,0.43666666666666665
+0,{'n_neighbors': 8},Max,ZScore,PCA1,KNN,0.8412962962962963
+1,{'n_neighbors': 20},Max,ZScore,PCA1,KNN,0.8385185185185186
+2,{'n_neighbors': 26},Max,ZScore,PCA1,KNN,0.8385185185185186
+3,{'n_neighbors': 14},Max,ZScore,PCA1,KNN,0.8381481481481482
+4,{'n_neighbors': 2},Max,ZScore,PCA1,KNN,0.7994444444444444
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,ZScore,PCA1,NB,0.8107407407407405
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,ZScore,PCA1,NB,0.7983333333333333
+0,{'alpha': 1e-05},Max,ZScore,PCA1,Perceptron,0.6431481481481481
+1,{'alpha': 0.00017782794100389227},Max,ZScore,PCA1,Perceptron,0.6207407407407407
+2,{'alpha': 0.0031622776601683794},Max,ZScore,PCA1,Perceptron,0.5824074074074074
+3,{'alpha': 0.05623413251903491},Max,ZScore,PCA1,Perceptron,0.5075925925925926
+4,{'alpha': 1.0},Max,ZScore,PCA1,Perceptron,0.23055555555555557
+0,{'max_depth': 7},Max,ZScore,PCA1,DT,0.8268518518518518
+1,{'max_depth': 9},Max,ZScore,PCA1,DT,0.8235185185185185
+2,{'max_depth': 11},Max,ZScore,PCA1,DT,0.8135185185185185
+3,{'max_depth': 5},Max,ZScore,PCA1,DT,0.8038888888888889
+4,{'max_depth': 3},Max,ZScore,PCA1,DT,0.7761111111111111
+5,{'max_depth': 1},Max,ZScore,PCA1,DT,0.4562962962962963
+0,{'n_neighbors': 8},Max,ZScore,PCA2,KNN,0.8962962962962963
+1,{'n_neighbors': 14},Max,ZScore,PCA2,KNN,0.8909259259259259
+2,{'n_neighbors': 26},Max,ZScore,PCA2,KNN,0.8857407407407407
+3,{'n_neighbors': 20},Max,ZScore,PCA2,KNN,0.8851851851851852
+4,{'n_neighbors': 2},Max,ZScore,PCA2,KNN,0.885
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,ZScore,PCA2,NB,0.8342592592592593
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,ZScore,PCA2,NB,0.8311111111111111
+0,{'alpha': 1e-05},Max,ZScore,PCA2,Perceptron,0.7390740740740741
+1,{'alpha': 0.00017782794100389227},Max,ZScore,PCA2,Perceptron,0.7327777777777778
+2,{'alpha': 0.0031622776601683794},Max,ZScore,PCA2,Perceptron,0.7242592592592593
+3,{'alpha': 0.05623413251903491},Max,ZScore,PCA2,Perceptron,0.6022222222222222
+4,{'alpha': 1.0},Max,ZScore,PCA2,Perceptron,0.2490740740740741
+0,{'max_depth': 11},Max,ZScore,PCA2,DT,0.8640740740740741
+1,{'max_depth': 9},Max,ZScore,PCA2,DT,0.8579629629629629
+2,{'max_depth': 7},Max,ZScore,PCA2,DT,0.8435185185185186
+3,{'max_depth': 5},Max,ZScore,PCA2,DT,0.8094444444444444
+4,{'max_depth': 3},Max,ZScore,PCA2,DT,0.7575925925925926
+5,{'max_depth': 1},Max,ZScore,PCA2,DT,0.4525925925925926
+0,{'n_neighbors': 8},Max,ZScore,PCA3,KNN,0.8988888888888888
+1,{'n_neighbors': 2},Max,ZScore,PCA3,KNN,0.8959259259259259
+2,{'n_neighbors': 14},Max,ZScore,PCA3,KNN,0.8946296296296297
+3,{'n_neighbors': 20},Max,ZScore,PCA3,KNN,0.8898148148148148
+4,{'n_neighbors': 26},Max,ZScore,PCA3,KNN,0.8859259259259259
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,ZScore,PCA3,NB,0.835
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,ZScore,PCA3,NB,0.8335185185185185
+0,{'alpha': 1e-05},Max,ZScore,PCA3,Perceptron,0.7616666666666667
+1,{'alpha': 0.00017782794100389227},Max,ZScore,PCA3,Perceptron,0.7572222222222222
+2,{'alpha': 0.0031622776601683794},Max,ZScore,PCA3,Perceptron,0.7148148148148148
+3,{'alpha': 0.05623413251903491},Max,ZScore,PCA3,Perceptron,0.6003703703703703
+4,{'alpha': 1.0},Max,ZScore,PCA3,Perceptron,0.24944444444444444
+0,{'max_depth': 11},Max,ZScore,PCA3,DT,0.8588888888888889
+1,{'max_depth': 9},Max,ZScore,PCA3,DT,0.847037037037037
+2,{'max_depth': 7},Max,ZScore,PCA3,DT,0.8379629629629629
+3,{'max_depth': 5},Max,ZScore,PCA3,DT,0.8077777777777778
+4,{'max_depth': 3},Max,ZScore,PCA3,DT,0.7577777777777778
+5,{'max_depth': 1},Max,ZScore,PCA3,DT,0.4525925925925926
+0,{'n_neighbors': 8},Max,Identity,Identity,KNN,0.8992592592592593
+1,{'n_neighbors': 2},Max,Identity,Identity,KNN,0.8966666666666666
+2,{'n_neighbors': 14},Max,Identity,Identity,KNN,0.8951851851851852
+3,{'n_neighbors': 20},Max,Identity,Identity,KNN,0.8898148148148148
+4,{'n_neighbors': 26},Max,Identity,Identity,KNN,0.885
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,Identity,Identity,NB,0.8018518518518518
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,Identity,Identity,NB,0.8011111111111111
+0,{'alpha': 1e-05},Max,Identity,Identity,Perceptron,0.7468518518518519
+1,{'alpha': 0.00017782794100389227},Max,Identity,Identity,Perceptron,0.7227777777777777
+2,{'alpha': 0.0031622776601683794},Max,Identity,Identity,Perceptron,0.4661111111111111
+3,{'alpha': 0.05623413251903491},Max,Identity,Identity,Perceptron,0.23833333333333334
+4,{'alpha': 1.0},Max,Identity,Identity,Perceptron,0.22018518518518518
+0,{'max_depth': 9},Max,Identity,Identity,DT,0.86
+1,{'max_depth': 7},Max,Identity,Identity,DT,0.8581481481481481
+2,{'max_depth': 11},Max,Identity,Identity,DT,0.855
+3,{'max_depth': 5},Max,Identity,Identity,DT,0.82
+4,{'max_depth': 3},Max,Identity,Identity,DT,0.7755555555555556
+5,{'max_depth': 1},Max,Identity,Identity,DT,0.43333333333333335
+0,{'n_neighbors': 8},Max,Identity,BestK1,KNN,0.6794444444444444
+1,{'n_neighbors': 14},Max,Identity,BestK1,KNN,0.6746296296296296
+2,{'n_neighbors': 20},Max,Identity,BestK1,KNN,0.6687037037037037
+3,{'n_neighbors': 26},Max,Identity,BestK1,KNN,0.6646296296296297
+4,{'n_neighbors': 2},Max,Identity,BestK1,KNN,0.6209259259259259
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,Identity,BestK1,NB,0.5516666666666666
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,Identity,BestK1,NB,0.5505555555555556
+0,{'alpha': 1e-05},Max,Identity,BestK1,Perceptron,0.4387037037037037
+1,{'alpha': 0.00017782794100389227},Max,Identity,BestK1,Perceptron,0.3353703703703704
+2,{'alpha': 0.0031622776601683794},Max,Identity,BestK1,Perceptron,0.2662962962962963
+3,{'alpha': 1.0},Max,Identity,BestK1,Perceptron,0.22018518518518518
+4,{'alpha': 0.05623413251903491},Max,Identity,BestK1,Perceptron,0.22018518518518518
+0,{'max_depth': 7},Max,Identity,BestK1,DT,0.6709259259259259
+1,{'max_depth': 11},Max,Identity,BestK1,DT,0.6674074074074074
+2,{'max_depth': 9},Max,Identity,BestK1,DT,0.6666666666666666
+3,{'max_depth': 5},Max,Identity,BestK1,DT,0.6459259259259259
+4,{'max_depth': 3},Max,Identity,BestK1,DT,0.5977777777777777
+5,{'max_depth': 1},Max,Identity,BestK1,DT,0.43666666666666665
+0,{'n_neighbors': 8},Max,Identity,BestK3,KNN,0.8948148148148148
+1,{'n_neighbors': 2},Max,Identity,BestK3,KNN,0.8909259259259259
+2,{'n_neighbors': 14},Max,Identity,BestK3,KNN,0.89
+3,{'n_neighbors': 20},Max,Identity,BestK3,KNN,0.8859259259259259
+4,{'n_neighbors': 26},Max,Identity,BestK3,KNN,0.882962962962963
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,Identity,BestK3,NB,0.7872222222222223
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,Identity,BestK3,NB,0.7862962962962963
+0,{'alpha': 1e-05},Max,Identity,BestK3,Perceptron,0.737037037037037
+1,{'alpha': 0.00017782794100389227},Max,Identity,BestK3,Perceptron,0.7172222222222222
+2,{'alpha': 0.0031622776601683794},Max,Identity,BestK3,Perceptron,0.4674074074074074
+3,{'alpha': 0.05623413251903491},Max,Identity,BestK3,Perceptron,0.2238888888888889
+4,{'alpha': 1.0},Max,Identity,BestK3,Perceptron,0.22018518518518518
+0,{'max_depth': 9},Max,Identity,BestK3,DT,0.8587037037037037
+1,{'max_depth': 7},Max,Identity,BestK3,DT,0.8564814814814815
+2,{'max_depth': 11},Max,Identity,BestK3,DT,0.8477777777777777
+3,{'max_depth': 5},Max,Identity,BestK3,DT,0.8096296296296296
+4,{'max_depth': 3},Max,Identity,BestK3,DT,0.7588888888888888
+5,{'max_depth': 1},Max,Identity,BestK3,DT,0.4225925925925926
+0,{'n_neighbors': 8},Max,Identity,BestK2,KNN,0.8455555555555555
+1,{'n_neighbors': 14},Max,Identity,BestK2,KNN,0.8372222222222222
+2,{'n_neighbors': 2},Max,Identity,BestK2,KNN,0.8288888888888889
+3,{'n_neighbors': 20},Max,Identity,BestK2,KNN,0.8248148148148148
+4,{'n_neighbors': 26},Max,Identity,BestK2,KNN,0.8168518518518518
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,Identity,BestK2,NB,0.6842592592592592
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,Identity,BestK2,NB,0.6812962962962963
+0,{'alpha': 1e-05},Max,Identity,BestK2,Perceptron,0.5187037037037037
+1,{'alpha': 0.00017782794100389227},Max,Identity,BestK2,Perceptron,0.4722222222222222
+2,{'alpha': 0.0031622776601683794},Max,Identity,BestK2,Perceptron,0.4148148148148148
+3,{'alpha': 0.05623413251903491},Max,Identity,BestK2,Perceptron,0.2225925925925926
+4,{'alpha': 1.0},Max,Identity,BestK2,Perceptron,0.22018518518518518
+0,{'max_depth': 11},Max,Identity,BestK2,DT,0.8124074074074074
+1,{'max_depth': 9},Max,Identity,BestK2,DT,0.8103703703703704
+2,{'max_depth': 7},Max,Identity,BestK2,DT,0.7955555555555556
+3,{'max_depth': 5},Max,Identity,BestK2,DT,0.7577777777777778
+4,{'max_depth': 3},Max,Identity,BestK2,DT,0.6535185185185185
+5,{'max_depth': 1},Max,Identity,BestK2,DT,0.43666666666666665
+0,{'n_neighbors': 14},Max,Identity,PCA1,KNN,0.8424074074074074
+1,{'n_neighbors': 26},Max,Identity,PCA1,KNN,0.8422222222222222
+2,{'n_neighbors': 20},Max,Identity,PCA1,KNN,0.8401851851851851
+3,{'n_neighbors': 8},Max,Identity,PCA1,KNN,0.8387037037037037
+4,{'n_neighbors': 2},Max,Identity,PCA1,KNN,0.8081481481481482
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,Identity,PCA1,NB,0.787962962962963
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,Identity,PCA1,NB,0.7772222222222223
+0,{'alpha': 0.00017782794100389227},Max,Identity,PCA1,Perceptron,0.6014814814814815
+1,{'alpha': 1e-05},Max,Identity,PCA1,Perceptron,0.5972222222222222
+2,{'alpha': 0.0031622776601683794},Max,Identity,PCA1,Perceptron,0.4998148148148148
+3,{'alpha': 0.05623413251903491},Max,Identity,PCA1,Perceptron,0.37425925925925924
+4,{'alpha': 1.0},Max,Identity,PCA1,Perceptron,0.3416666666666667
+0,{'max_depth': 9},Max,Identity,PCA1,DT,0.8283333333333334
+1,{'max_depth': 7},Max,Identity,PCA1,DT,0.8281481481481482
+2,{'max_depth': 11},Max,Identity,PCA1,DT,0.8185185185185185
+3,{'max_depth': 5},Max,Identity,PCA1,DT,0.8072222222222222
+4,{'max_depth': 3},Max,Identity,PCA1,DT,0.6683333333333333
+5,{'max_depth': 1},Max,Identity,PCA1,DT,0.4412962962962963
+0,{'n_neighbors': 8},Max,Identity,PCA2,KNN,0.8970370370370371
+1,{'n_neighbors': 14},Max,Identity,PCA2,KNN,0.8946296296296297
+2,{'n_neighbors': 20},Max,Identity,PCA2,KNN,0.8896296296296297
+3,{'n_neighbors': 26},Max,Identity,PCA2,KNN,0.8859259259259259
+4,{'n_neighbors': 2},Max,Identity,PCA2,KNN,0.8811111111111111
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,Identity,PCA2,NB,0.8416666666666667
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,Identity,PCA2,NB,0.8411111111111111
+0,{'alpha': 1e-05},Max,Identity,PCA2,Perceptron,0.7203703703703703
+1,{'alpha': 0.00017782794100389227},Max,Identity,PCA2,Perceptron,0.6996296296296296
+2,{'alpha': 0.0031622776601683794},Max,Identity,PCA2,Perceptron,0.5468518518518518
+3,{'alpha': 0.05623413251903491},Max,Identity,PCA2,Perceptron,0.42907407407407405
+4,{'alpha': 1.0},Max,Identity,PCA2,Perceptron,0.35648148148148145
+0,{'max_depth': 11},Max,Identity,PCA2,DT,0.8611111111111112
+1,{'max_depth': 9},Max,Identity,PCA2,DT,0.8568518518518519
+2,{'max_depth': 7},Max,Identity,PCA2,DT,0.8440740740740741
+3,{'max_depth': 5},Max,Identity,PCA2,DT,0.8094444444444444
+4,{'max_depth': 3},Max,Identity,PCA2,DT,0.7538888888888889
+5,{'max_depth': 1},Max,Identity,PCA2,DT,0.4488888888888889
+0,{'n_neighbors': 8},Max,Identity,PCA3,KNN,0.899074074074074
+1,{'n_neighbors': 2},Max,Identity,PCA3,KNN,0.8968518518518519
+2,{'n_neighbors': 14},Max,Identity,PCA3,KNN,0.8951851851851852
+3,{'n_neighbors': 20},Max,Identity,PCA3,KNN,0.89
+4,{'n_neighbors': 26},Max,Identity,PCA3,KNN,0.885
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Max,Identity,PCA3,NB,0.8401851851851851
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Max,Identity,PCA3,NB,0.8396296296296296
+0,{'alpha': 1e-05},Max,Identity,PCA3,Perceptron,0.7496296296296296
+1,{'alpha': 0.00017782794100389227},Max,Identity,PCA3,Perceptron,0.6616666666666666
+2,{'alpha': 0.0031622776601683794},Max,Identity,PCA3,Perceptron,0.5503703703703704
+3,{'alpha': 0.05623413251903491},Max,Identity,PCA3,Perceptron,0.4288888888888889
+4,{'alpha': 1.0},Max,Identity,PCA3,Perceptron,0.35703703703703704
+0,{'max_depth': 11},Max,Identity,PCA3,DT,0.8537037037037037
+1,{'max_depth': 9},Max,Identity,PCA3,DT,0.8529629629629629
+2,{'max_depth': 7},Max,Identity,PCA3,DT,0.8383333333333334
+3,{'max_depth': 5},Max,Identity,PCA3,DT,0.8092592592592592
+4,{'max_depth': 3},Max,Identity,PCA3,DT,0.7538888888888889
+5,{'max_depth': 1},Max,Identity,PCA3,DT,0.4488888888888889
+0,{'n_neighbors': 8},Identity,MinMax,Identity,KNN,0.9001851851851852
+1,{'n_neighbors': 2},Identity,MinMax,Identity,KNN,0.8981481481481481
+2,{'n_neighbors': 14},Identity,MinMax,Identity,KNN,0.8922222222222222
+3,{'n_neighbors': 20},Identity,MinMax,Identity,KNN,0.89
+4,{'n_neighbors': 26},Identity,MinMax,Identity,KNN,0.8853703703703704
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,MinMax,Identity,NB,0.8018518518518518
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,MinMax,Identity,NB,0.8011111111111111
+0,{'alpha': 0.00017782794100389227},Identity,MinMax,Identity,Perceptron,0.7855555555555556
+1,{'alpha': 1e-05},Identity,MinMax,Identity,Perceptron,0.7618518518518519
+2,{'alpha': 0.0031622776601683794},Identity,MinMax,Identity,Perceptron,0.6503703703703704
+3,{'alpha': 0.05623413251903491},Identity,MinMax,Identity,Perceptron,0.3459259259259259
+4,{'alpha': 1.0},Identity,MinMax,Identity,Perceptron,0.22018518518518518
+0,{'max_depth': 9},Identity,MinMax,Identity,DT,0.8592592592592593
+1,{'max_depth': 7},Identity,MinMax,Identity,DT,0.8590740740740741
+2,{'max_depth': 11},Identity,MinMax,Identity,DT,0.8535185185185186
+3,{'max_depth': 5},Identity,MinMax,Identity,DT,0.8203703703703704
+4,{'max_depth': 3},Identity,MinMax,Identity,DT,0.7755555555555556
+5,{'max_depth': 1},Identity,MinMax,Identity,DT,0.43333333333333335
+0,{'n_neighbors': 8},Identity,MinMax,BestK1,KNN,0.6688888888888889
+1,{'n_neighbors': 14},Identity,MinMax,BestK1,KNN,0.6625925925925926
+2,{'n_neighbors': 26},Identity,MinMax,BestK1,KNN,0.6525925925925926
+3,{'n_neighbors': 20},Identity,MinMax,BestK1,KNN,0.6524074074074074
+4,{'n_neighbors': 2},Identity,MinMax,BestK1,KNN,0.6016666666666667
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,MinMax,BestK1,NB,0.5516666666666666
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,MinMax,BestK1,NB,0.5505555555555556
+0,{'alpha': 1e-05},Identity,MinMax,BestK1,Perceptron,0.502962962962963
+1,{'alpha': 0.00017782794100389227},Identity,MinMax,BestK1,Perceptron,0.4822222222222222
+2,{'alpha': 0.0031622776601683794},Identity,MinMax,BestK1,Perceptron,0.38722222222222225
+3,{'alpha': 0.05623413251903491},Identity,MinMax,BestK1,Perceptron,0.2872222222222222
+4,{'alpha': 1.0},Identity,MinMax,BestK1,Perceptron,0.22018518518518518
+0,{'max_depth': 7},Identity,MinMax,BestK1,DT,0.6701851851851852
+1,{'max_depth': 11},Identity,MinMax,BestK1,DT,0.6681481481481482
+2,{'max_depth': 9},Identity,MinMax,BestK1,DT,0.6666666666666666
+3,{'max_depth': 5},Identity,MinMax,BestK1,DT,0.6455555555555555
+4,{'max_depth': 3},Identity,MinMax,BestK1,DT,0.5977777777777777
+5,{'max_depth': 1},Identity,MinMax,BestK1,DT,0.43666666666666665
+0,{'n_neighbors': 8},Identity,MinMax,BestK3,KNN,0.897962962962963
+1,{'n_neighbors': 14},Identity,MinMax,BestK3,KNN,0.8905555555555555
+2,{'n_neighbors': 2},Identity,MinMax,BestK3,KNN,0.8901851851851852
+3,{'n_neighbors': 20},Identity,MinMax,BestK3,KNN,0.8875925925925926
+4,{'n_neighbors': 26},Identity,MinMax,BestK3,KNN,0.8835185185185185
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,MinMax,BestK3,NB,0.7872222222222223
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,MinMax,BestK3,NB,0.7862962962962963
+0,{'alpha': 1e-05},Identity,MinMax,BestK3,Perceptron,0.7572222222222222
+1,{'alpha': 0.00017782794100389227},Identity,MinMax,BestK3,Perceptron,0.7372222222222222
+2,{'alpha': 0.0031622776601683794},Identity,MinMax,BestK3,Perceptron,0.6055555555555555
+3,{'alpha': 0.05623413251903491},Identity,MinMax,BestK3,Perceptron,0.32555555555555554
+4,{'alpha': 1.0},Identity,MinMax,BestK3,Perceptron,0.22018518518518518
+0,{'max_depth': 7},Identity,MinMax,BestK3,DT,0.8566666666666667
+1,{'max_depth': 9},Identity,MinMax,BestK3,DT,0.8557407407407407
+2,{'max_depth': 11},Identity,MinMax,BestK3,DT,0.8479629629629629
+3,{'max_depth': 5},Identity,MinMax,BestK3,DT,0.8092592592592592
+4,{'max_depth': 3},Identity,MinMax,BestK3,DT,0.7588888888888888
+5,{'max_depth': 1},Identity,MinMax,BestK3,DT,0.4225925925925926
+0,{'n_neighbors': 14},Identity,MinMax,BestK2,KNN,0.8331481481481482
+1,{'n_neighbors': 8},Identity,MinMax,BestK2,KNN,0.8327777777777777
+2,{'n_neighbors': 20},Identity,MinMax,BestK2,KNN,0.8212962962962963
+3,{'n_neighbors': 2},Identity,MinMax,BestK2,KNN,0.8211111111111111
+4,{'n_neighbors': 26},Identity,MinMax,BestK2,KNN,0.8125925925925926
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,MinMax,BestK2,NB,0.6842592592592592
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,MinMax,BestK2,NB,0.6812962962962963
+0,{'alpha': 1e-05},Identity,MinMax,BestK2,Perceptron,0.5662962962962963
+1,{'alpha': 0.00017782794100389227},Identity,MinMax,BestK2,Perceptron,0.5446296296296296
+2,{'alpha': 0.0031622776601683794},Identity,MinMax,BestK2,Perceptron,0.48074074074074075
+3,{'alpha': 0.05623413251903491},Identity,MinMax,BestK2,Perceptron,0.3048148148148148
+4,{'alpha': 1.0},Identity,MinMax,BestK2,Perceptron,0.22018518518518518
+0,{'max_depth': 11},Identity,MinMax,BestK2,DT,0.8118518518518518
+1,{'max_depth': 9},Identity,MinMax,BestK2,DT,0.8103703703703704
+2,{'max_depth': 7},Identity,MinMax,BestK2,DT,0.7937037037037037
+3,{'max_depth': 5},Identity,MinMax,BestK2,DT,0.7581481481481481
+4,{'max_depth': 3},Identity,MinMax,BestK2,DT,0.6531481481481481
+5,{'max_depth': 1},Identity,MinMax,BestK2,DT,0.43666666666666665
+0,{'n_neighbors': 14},Identity,MinMax,PCA1,KNN,0.8377777777777777
+1,{'n_neighbors': 20},Identity,MinMax,PCA1,KNN,0.8375925925925926
+2,{'n_neighbors': 8},Identity,MinMax,PCA1,KNN,0.8374074074074074
+3,{'n_neighbors': 26},Identity,MinMax,PCA1,KNN,0.8364814814814815
+4,{'n_neighbors': 2},Identity,MinMax,PCA1,KNN,0.8035185185185185
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,MinMax,PCA1,NB,0.7885185185185185
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,MinMax,PCA1,NB,0.7792592592592592
+0,{'alpha': 1e-05},Identity,MinMax,PCA1,Perceptron,0.667962962962963
+1,{'alpha': 0.00017782794100389227},Identity,MinMax,PCA1,Perceptron,0.6592592592592592
+2,{'alpha': 0.0031622776601683794},Identity,MinMax,PCA1,Perceptron,0.5994444444444444
+3,{'alpha': 0.05623413251903491},Identity,MinMax,PCA1,Perceptron,0.4537037037037037
+4,{'alpha': 1.0},Identity,MinMax,PCA1,Perceptron,0.3296296296296296
+0,{'max_depth': 9},Identity,MinMax,PCA1,DT,0.8222222222222222
+1,{'max_depth': 7},Identity,MinMax,PCA1,DT,0.8207407407407408
+2,{'max_depth': 11},Identity,MinMax,PCA1,DT,0.807037037037037
+3,{'max_depth': 5},Identity,MinMax,PCA1,DT,0.8062962962962963
+4,{'max_depth': 3},Identity,MinMax,PCA1,DT,0.7585185185185185
+5,{'max_depth': 1},Identity,MinMax,PCA1,DT,0.44425925925925924
+0,{'n_neighbors': 8},Identity,MinMax,PCA2,KNN,0.8957407407407407
+1,{'n_neighbors': 14},Identity,MinMax,PCA2,KNN,0.8901851851851852
+2,{'n_neighbors': 20},Identity,MinMax,PCA2,KNN,0.8842592592592593
+3,{'n_neighbors': 2},Identity,MinMax,PCA2,KNN,0.8820370370370371
+4,{'n_neighbors': 26},Identity,MinMax,PCA2,KNN,0.8818518518518519
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,MinMax,PCA2,NB,0.8422222222222222
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,MinMax,PCA2,NB,0.8403703703703703
+0,{'alpha': 1e-05},Identity,MinMax,PCA2,Perceptron,0.762962962962963
+1,{'alpha': 0.0031622776601683794},Identity,MinMax,PCA2,Perceptron,0.7166666666666667
+2,{'alpha': 0.00017782794100389227},Identity,MinMax,PCA2,Perceptron,0.6931481481481482
+3,{'alpha': 0.05623413251903491},Identity,MinMax,PCA2,Perceptron,0.4925925925925926
+4,{'alpha': 1.0},Identity,MinMax,PCA2,Perceptron,0.3512962962962963
+0,{'max_depth': 11},Identity,MinMax,PCA2,DT,0.8607407407407407
+1,{'max_depth': 9},Identity,MinMax,PCA2,DT,0.8583333333333333
+2,{'max_depth': 7},Identity,MinMax,PCA2,DT,0.8483333333333334
+3,{'max_depth': 5},Identity,MinMax,PCA2,DT,0.8201851851851852
+4,{'max_depth': 3},Identity,MinMax,PCA2,DT,0.7568518518518519
+5,{'max_depth': 1},Identity,MinMax,PCA2,DT,0.45185185185185184
+0,{'n_neighbors': 8},Identity,MinMax,PCA3,KNN,0.9001851851851852
+1,{'n_neighbors': 2},Identity,MinMax,PCA3,KNN,0.8981481481481481
+2,{'n_neighbors': 14},Identity,MinMax,PCA3,KNN,0.8922222222222222
+3,{'n_neighbors': 20},Identity,MinMax,PCA3,KNN,0.89
+4,{'n_neighbors': 26},Identity,MinMax,PCA3,KNN,0.8853703703703704
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,MinMax,PCA3,NB,0.842037037037037
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,MinMax,PCA3,NB,0.8418518518518519
+0,{'alpha': 1e-05},Identity,MinMax,PCA3,Perceptron,0.7570370370370371
+1,{'alpha': 0.00017782794100389227},Identity,MinMax,PCA3,Perceptron,0.7440740740740741
+2,{'alpha': 0.0031622776601683794},Identity,MinMax,PCA3,Perceptron,0.6888888888888889
+3,{'alpha': 0.05623413251903491},Identity,MinMax,PCA3,Perceptron,0.49018518518518517
+4,{'alpha': 1.0},Identity,MinMax,PCA3,Perceptron,0.3503703703703704
+0,{'max_depth': 9},Identity,MinMax,PCA3,DT,0.8516666666666667
+1,{'max_depth': 11},Identity,MinMax,PCA3,DT,0.850925925925926
+2,{'max_depth': 7},Identity,MinMax,PCA3,DT,0.8462962962962963
+3,{'max_depth': 5},Identity,MinMax,PCA3,DT,0.8187037037037037
+4,{'max_depth': 3},Identity,MinMax,PCA3,DT,0.7564814814814815
+5,{'max_depth': 1},Identity,MinMax,PCA3,DT,0.45185185185185184
+0,{'n_neighbors': 8},Identity,ZScore,Identity,KNN,0.8988888888888888
+1,{'n_neighbors': 2},Identity,ZScore,Identity,KNN,0.8959259259259259
+2,{'n_neighbors': 14},Identity,ZScore,Identity,KNN,0.8946296296296297
+3,{'n_neighbors': 20},Identity,ZScore,Identity,KNN,0.8898148148148148
+4,{'n_neighbors': 26},Identity,ZScore,Identity,KNN,0.8859259259259259
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,ZScore,Identity,NB,0.8018518518518518
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,ZScore,Identity,NB,0.8011111111111111
+0,{'alpha': 1e-05},Identity,ZScore,Identity,Perceptron,0.7616666666666667
+1,{'alpha': 0.00017782794100389227},Identity,ZScore,Identity,Perceptron,0.7572222222222222
+2,{'alpha': 0.0031622776601683794},Identity,ZScore,Identity,Perceptron,0.7148148148148148
+3,{'alpha': 0.05623413251903491},Identity,ZScore,Identity,Perceptron,0.6003703703703703
+4,{'alpha': 1.0},Identity,ZScore,Identity,Perceptron,0.24944444444444444
+0,{'max_depth': 9},Identity,ZScore,Identity,DT,0.8596296296296296
+1,{'max_depth': 7},Identity,ZScore,Identity,DT,0.8577777777777778
+2,{'max_depth': 11},Identity,ZScore,Identity,DT,0.8542592592592593
+3,{'max_depth': 5},Identity,ZScore,Identity,DT,0.8196296296296296
+4,{'max_depth': 3},Identity,ZScore,Identity,DT,0.7755555555555556
+5,{'max_depth': 1},Identity,ZScore,Identity,DT,0.43333333333333335
+0,{'n_neighbors': 8},Identity,ZScore,BestK1,KNN,0.6737037037037037
+1,{'n_neighbors': 14},Identity,ZScore,BestK1,KNN,0.6655555555555556
+2,{'n_neighbors': 20},Identity,ZScore,BestK1,KNN,0.6612962962962963
+3,{'n_neighbors': 26},Identity,ZScore,BestK1,KNN,0.6581481481481481
+4,{'n_neighbors': 2},Identity,ZScore,BestK1,KNN,0.6127777777777778
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,ZScore,BestK1,NB,0.5516666666666666
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,ZScore,BestK1,NB,0.5505555555555556
+0,{'alpha': 0.00017782794100389227},Identity,ZScore,BestK1,Perceptron,0.5162962962962963
+1,{'alpha': 0.0031622776601683794},Identity,ZScore,BestK1,Perceptron,0.49592592592592594
+2,{'alpha': 1e-05},Identity,ZScore,BestK1,Perceptron,0.47314814814814815
+3,{'alpha': 0.05623413251903491},Identity,ZScore,BestK1,Perceptron,0.4096296296296296
+4,{'alpha': 1.0},Identity,ZScore,BestK1,Perceptron,0.1274074074074074
+0,{'max_depth': 7},Identity,ZScore,BestK1,DT,0.6696296296296296
+1,{'max_depth': 9},Identity,ZScore,BestK1,DT,0.6687037037037037
+2,{'max_depth': 11},Identity,ZScore,BestK1,DT,0.6668518518518518
+3,{'max_depth': 5},Identity,ZScore,BestK1,DT,0.6451851851851852
+4,{'max_depth': 3},Identity,ZScore,BestK1,DT,0.5977777777777777
+5,{'max_depth': 1},Identity,ZScore,BestK1,DT,0.43666666666666665
+0,{'n_neighbors': 8},Identity,ZScore,BestK3,KNN,0.8951851851851852
+1,{'n_neighbors': 2},Identity,ZScore,BestK3,KNN,0.8933333333333333
+2,{'n_neighbors': 14},Identity,ZScore,BestK3,KNN,0.8907407407407407
+3,{'n_neighbors': 20},Identity,ZScore,BestK3,KNN,0.8861111111111111
+4,{'n_neighbors': 26},Identity,ZScore,BestK3,KNN,0.8833333333333333
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,ZScore,BestK3,NB,0.7872222222222223
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,ZScore,BestK3,NB,0.7862962962962963
+0,{'alpha': 1e-05},Identity,ZScore,BestK3,Perceptron,0.7572222222222222
+1,{'alpha': 0.00017782794100389227},Identity,ZScore,BestK3,Perceptron,0.7398148148148148
+2,{'alpha': 0.0031622776601683794},Identity,ZScore,BestK3,Perceptron,0.6861111111111111
+3,{'alpha': 0.05623413251903491},Identity,ZScore,BestK3,Perceptron,0.47685185185185186
+4,{'alpha': 1.0},Identity,ZScore,BestK3,Perceptron,0.2087037037037037
+0,{'max_depth': 7},Identity,ZScore,BestK3,DT,0.8562962962962963
+1,{'max_depth': 9},Identity,ZScore,BestK3,DT,0.8535185185185186
+2,{'max_depth': 11},Identity,ZScore,BestK3,DT,0.8511111111111112
+3,{'max_depth': 5},Identity,ZScore,BestK3,DT,0.8088888888888889
+4,{'max_depth': 3},Identity,ZScore,BestK3,DT,0.7588888888888888
+5,{'max_depth': 1},Identity,ZScore,BestK3,DT,0.4225925925925926
+0,{'n_neighbors': 8},Identity,ZScore,BestK2,KNN,0.835925925925926
+1,{'n_neighbors': 14},Identity,ZScore,BestK2,KNN,0.8251851851851851
+2,{'n_neighbors': 2},Identity,ZScore,BestK2,KNN,0.8175925925925925
+3,{'n_neighbors': 20},Identity,ZScore,BestK2,KNN,0.817037037037037
+4,{'n_neighbors': 26},Identity,ZScore,BestK2,KNN,0.8090740740740741
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,ZScore,BestK2,NB,0.6842592592592592
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,ZScore,BestK2,NB,0.6812962962962963
+0,{'alpha': 1e-05},Identity,ZScore,BestK2,Perceptron,0.6068518518518519
+1,{'alpha': 0.00017782794100389227},Identity,ZScore,BestK2,Perceptron,0.5822222222222222
+2,{'alpha': 0.0031622776601683794},Identity,ZScore,BestK2,Perceptron,0.542037037037037
+3,{'alpha': 0.05623413251903491},Identity,ZScore,BestK2,Perceptron,0.4653703703703704
+4,{'alpha': 1.0},Identity,ZScore,BestK2,Perceptron,0.15166666666666667
+0,{'max_depth': 9},Identity,ZScore,BestK2,DT,0.8125925925925926
+1,{'max_depth': 11},Identity,ZScore,BestK2,DT,0.8098148148148148
+2,{'max_depth': 7},Identity,ZScore,BestK2,DT,0.7935185185185185
+3,{'max_depth': 5},Identity,ZScore,BestK2,DT,0.7583333333333333
+4,{'max_depth': 3},Identity,ZScore,BestK2,DT,0.6531481481481481
+5,{'max_depth': 1},Identity,ZScore,BestK2,DT,0.43666666666666665
+0,{'n_neighbors': 8},Identity,ZScore,PCA1,KNN,0.8412962962962963
+1,{'n_neighbors': 20},Identity,ZScore,PCA1,KNN,0.8385185185185186
+2,{'n_neighbors': 26},Identity,ZScore,PCA1,KNN,0.8385185185185186
+3,{'n_neighbors': 14},Identity,ZScore,PCA1,KNN,0.8381481481481482
+4,{'n_neighbors': 2},Identity,ZScore,PCA1,KNN,0.7994444444444444
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,ZScore,PCA1,NB,0.8107407407407405
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,ZScore,PCA1,NB,0.7983333333333333
+0,{'alpha': 1e-05},Identity,ZScore,PCA1,Perceptron,0.6431481481481481
+1,{'alpha': 0.00017782794100389227},Identity,ZScore,PCA1,Perceptron,0.6207407407407407
+2,{'alpha': 0.0031622776601683794},Identity,ZScore,PCA1,Perceptron,0.5824074074074074
+3,{'alpha': 0.05623413251903491},Identity,ZScore,PCA1,Perceptron,0.5075925925925926
+4,{'alpha': 1.0},Identity,ZScore,PCA1,Perceptron,0.23055555555555557
+0,{'max_depth': 7},Identity,ZScore,PCA1,DT,0.8268518518518518
+1,{'max_depth': 9},Identity,ZScore,PCA1,DT,0.8237037037037037
+2,{'max_depth': 11},Identity,ZScore,PCA1,DT,0.8105555555555556
+3,{'max_depth': 5},Identity,ZScore,PCA1,DT,0.8038888888888889
+4,{'max_depth': 3},Identity,ZScore,PCA1,DT,0.7761111111111111
+5,{'max_depth': 1},Identity,ZScore,PCA1,DT,0.4562962962962963
+0,{'n_neighbors': 8},Identity,ZScore,PCA2,KNN,0.8962962962962963
+1,{'n_neighbors': 14},Identity,ZScore,PCA2,KNN,0.8909259259259259
+2,{'n_neighbors': 26},Identity,ZScore,PCA2,KNN,0.8857407407407407
+3,{'n_neighbors': 20},Identity,ZScore,PCA2,KNN,0.8851851851851852
+4,{'n_neighbors': 2},Identity,ZScore,PCA2,KNN,0.885
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,ZScore,PCA2,NB,0.8342592592592593
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,ZScore,PCA2,NB,0.8311111111111111
+0,{'alpha': 1e-05},Identity,ZScore,PCA2,Perceptron,0.7390740740740741
+1,{'alpha': 0.00017782794100389227},Identity,ZScore,PCA2,Perceptron,0.7327777777777778
+2,{'alpha': 0.0031622776601683794},Identity,ZScore,PCA2,Perceptron,0.7242592592592593
+3,{'alpha': 0.05623413251903491},Identity,ZScore,PCA2,Perceptron,0.6022222222222222
+4,{'alpha': 1.0},Identity,ZScore,PCA2,Perceptron,0.2490740740740741
+0,{'max_depth': 11},Identity,ZScore,PCA2,DT,0.8655555555555555
+1,{'max_depth': 9},Identity,ZScore,PCA2,DT,0.8590740740740741
+2,{'max_depth': 7},Identity,ZScore,PCA2,DT,0.8438888888888889
+3,{'max_depth': 5},Identity,ZScore,PCA2,DT,0.8098148148148148
+4,{'max_depth': 3},Identity,ZScore,PCA2,DT,0.757962962962963
+5,{'max_depth': 1},Identity,ZScore,PCA2,DT,0.4525925925925926
+0,{'n_neighbors': 8},Identity,ZScore,PCA3,KNN,0.8988888888888888
+1,{'n_neighbors': 2},Identity,ZScore,PCA3,KNN,0.8959259259259259
+2,{'n_neighbors': 14},Identity,ZScore,PCA3,KNN,0.8946296296296297
+3,{'n_neighbors': 20},Identity,ZScore,PCA3,KNN,0.8898148148148148
+4,{'n_neighbors': 26},Identity,ZScore,PCA3,KNN,0.8859259259259259
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,ZScore,PCA3,NB,0.835
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,ZScore,PCA3,NB,0.8335185185185185
+0,{'alpha': 1e-05},Identity,ZScore,PCA3,Perceptron,0.7616666666666667
+1,{'alpha': 0.00017782794100389227},Identity,ZScore,PCA3,Perceptron,0.7572222222222222
+2,{'alpha': 0.0031622776601683794},Identity,ZScore,PCA3,Perceptron,0.7148148148148148
+3,{'alpha': 0.05623413251903491},Identity,ZScore,PCA3,Perceptron,0.6003703703703703
+4,{'alpha': 1.0},Identity,ZScore,PCA3,Perceptron,0.24944444444444444
+0,{'max_depth': 11},Identity,ZScore,PCA3,DT,0.8624074074074074
+1,{'max_depth': 9},Identity,ZScore,PCA3,DT,0.8498148148148148
+2,{'max_depth': 7},Identity,ZScore,PCA3,DT,0.8387037037037037
+3,{'max_depth': 5},Identity,ZScore,PCA3,DT,0.8077777777777778
+4,{'max_depth': 3},Identity,ZScore,PCA3,DT,0.7577777777777778
+5,{'max_depth': 1},Identity,ZScore,PCA3,DT,0.4525925925925926
+0,{'n_neighbors': 8},Identity,Identity,Identity,KNN,0.8988888888888888
+1,{'n_neighbors': 2},Identity,Identity,Identity,KNN,0.8968518518518519
+2,{'n_neighbors': 14},Identity,Identity,Identity,KNN,0.8953703703703704
+3,{'n_neighbors': 20},Identity,Identity,Identity,KNN,0.89
+4,{'n_neighbors': 26},Identity,Identity,Identity,KNN,0.885
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,Identity,Identity,NB,0.8018518518518518
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,Identity,Identity,NB,0.8011111111111111
+0,{'alpha': 1e-05},Identity,Identity,Identity,Perceptron,0.5877777777777777
+1,{'alpha': 0.00017782794100389227},Identity,Identity,Identity,Perceptron,0.5507407407407408
+2,{'alpha': 0.0031622776601683794},Identity,Identity,Identity,Perceptron,0.38222222222222224
+3,{'alpha': 0.05623413251903491},Identity,Identity,Identity,Perceptron,0.2222222222222222
+4,{'alpha': 1.0},Identity,Identity,Identity,Perceptron,0.22018518518518518
+0,{'max_depth': 9},Identity,Identity,Identity,DT,0.8594444444444445
+1,{'max_depth': 7},Identity,Identity,Identity,DT,0.8575925925925926
+2,{'max_depth': 11},Identity,Identity,Identity,DT,0.8564814814814815
+3,{'max_depth': 5},Identity,Identity,Identity,DT,0.8192592592592592
+4,{'max_depth': 3},Identity,Identity,Identity,DT,0.7755555555555556
+5,{'max_depth': 1},Identity,Identity,Identity,DT,0.43333333333333335
+0,{'n_neighbors': 8},Identity,Identity,BestK1,KNN,0.6788888888888889
+1,{'n_neighbors': 14},Identity,Identity,BestK1,KNN,0.6727777777777778
+2,{'n_neighbors': 20},Identity,Identity,BestK1,KNN,0.6688888888888889
+3,{'n_neighbors': 26},Identity,Identity,BestK1,KNN,0.6648148148148149
+4,{'n_neighbors': 2},Identity,Identity,BestK1,KNN,0.6211111111111111
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,Identity,BestK1,NB,0.5516666666666666
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,Identity,BestK1,NB,0.5505555555555556
+0,{'alpha': 1e-05},Identity,Identity,BestK1,Perceptron,0.29777777777777775
+1,{'alpha': 0.00017782794100389227},Identity,Identity,BestK1,Perceptron,0.27425925925925926
+2,{'alpha': 0.0031622776601683794},Identity,Identity,BestK1,Perceptron,0.25074074074074076
+3,{'alpha': 1.0},Identity,Identity,BestK1,Perceptron,0.22018518518518518
+4,{'alpha': 0.05623413251903491},Identity,Identity,BestK1,Perceptron,0.21351851851851852
+0,{'max_depth': 7},Identity,Identity,BestK1,DT,0.6705555555555556
+1,{'max_depth': 9},Identity,Identity,BestK1,DT,0.6666666666666666
+2,{'max_depth': 11},Identity,Identity,BestK1,DT,0.6657407407407407
+3,{'max_depth': 5},Identity,Identity,BestK1,DT,0.6453703703703704
+4,{'max_depth': 3},Identity,Identity,BestK1,DT,0.5977777777777777
+5,{'max_depth': 1},Identity,Identity,BestK1,DT,0.43666666666666665
+0,{'n_neighbors': 8},Identity,Identity,BestK3,KNN,0.895
+1,{'n_neighbors': 2},Identity,Identity,BestK3,KNN,0.8909259259259259
+2,{'n_neighbors': 14},Identity,Identity,BestK3,KNN,0.8903703703703704
+3,{'n_neighbors': 20},Identity,Identity,BestK3,KNN,0.8859259259259259
+4,{'n_neighbors': 26},Identity,Identity,BestK3,KNN,0.882962962962963
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,Identity,BestK3,NB,0.7872222222222223
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,Identity,BestK3,NB,0.7862962962962963
+0,{'alpha': 1e-05},Identity,Identity,BestK3,Perceptron,0.6416666666666667
+1,{'alpha': 0.00017782794100389227},Identity,Identity,BestK3,Perceptron,0.55
+2,{'alpha': 0.0031622776601683794},Identity,Identity,BestK3,Perceptron,0.30648148148148147
+3,{'alpha': 0.05623413251903491},Identity,Identity,BestK3,Perceptron,0.24185185185185185
+4,{'alpha': 1.0},Identity,Identity,BestK3,Perceptron,0.22018518518518518
+0,{'max_depth': 7},Identity,Identity,BestK3,DT,0.8575925925925926
+1,{'max_depth': 9},Identity,Identity,BestK3,DT,0.8572222222222222
+2,{'max_depth': 11},Identity,Identity,BestK3,DT,0.85
+3,{'max_depth': 5},Identity,Identity,BestK3,DT,0.8081481481481482
+4,{'max_depth': 3},Identity,Identity,BestK3,DT,0.7588888888888888
+5,{'max_depth': 1},Identity,Identity,BestK3,DT,0.4225925925925926
+0,{'n_neighbors': 8},Identity,Identity,BestK2,KNN,0.8455555555555555
+1,{'n_neighbors': 14},Identity,Identity,BestK2,KNN,0.837037037037037
+2,{'n_neighbors': 2},Identity,Identity,BestK2,KNN,0.8287037037037037
+3,{'n_neighbors': 20},Identity,Identity,BestK2,KNN,0.8246296296296296
+4,{'n_neighbors': 26},Identity,Identity,BestK2,KNN,0.8168518518518518
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,Identity,BestK2,NB,0.6842592592592592
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,Identity,BestK2,NB,0.6812962962962963
+0,{'alpha': 1e-05},Identity,Identity,BestK2,Perceptron,0.4261111111111111
+1,{'alpha': 0.00017782794100389227},Identity,Identity,BestK2,Perceptron,0.36574074074074076
+2,{'alpha': 0.0031622776601683794},Identity,Identity,BestK2,Perceptron,0.3038888888888889
+3,{'alpha': 0.05623413251903491},Identity,Identity,BestK2,Perceptron,0.25203703703703706
+4,{'alpha': 1.0},Identity,Identity,BestK2,Perceptron,0.22018518518518518
+0,{'max_depth': 9},Identity,Identity,BestK2,DT,0.8107407407407408
+1,{'max_depth': 11},Identity,Identity,BestK2,DT,0.8103703703703704
+2,{'max_depth': 7},Identity,Identity,BestK2,DT,0.7933333333333333
+3,{'max_depth': 5},Identity,Identity,BestK2,DT,0.7581481481481481
+4,{'max_depth': 3},Identity,Identity,BestK2,DT,0.6531481481481481
+5,{'max_depth': 1},Identity,Identity,BestK2,DT,0.43666666666666665
+0,{'n_neighbors': 14},Identity,Identity,PCA1,KNN,0.8424074074074074
+1,{'n_neighbors': 26},Identity,Identity,PCA1,KNN,0.8422222222222222
+2,{'n_neighbors': 20},Identity,Identity,PCA1,KNN,0.8401851851851851
+3,{'n_neighbors': 8},Identity,Identity,PCA1,KNN,0.8387037037037037
+4,{'n_neighbors': 2},Identity,Identity,PCA1,KNN,0.8081481481481482
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,Identity,PCA1,NB,0.787962962962963
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,Identity,PCA1,NB,0.7772222222222223
+0,{'alpha': 0.00017782794100389227},Identity,Identity,PCA1,Perceptron,0.5025925925925926
+1,{'alpha': 0.0031622776601683794},Identity,Identity,PCA1,Perceptron,0.4546296296296296
+2,{'alpha': 1e-05},Identity,Identity,PCA1,Perceptron,0.4494444444444444
+3,{'alpha': 0.05623413251903491},Identity,Identity,PCA1,Perceptron,0.42333333333333334
+4,{'alpha': 1.0},Identity,Identity,PCA1,Perceptron,0.1724074074074074
+0,{'max_depth': 9},Identity,Identity,PCA1,DT,0.8285185185185185
+1,{'max_depth': 7},Identity,Identity,PCA1,DT,0.8281481481481482
+2,{'max_depth': 11},Identity,Identity,PCA1,DT,0.8196296296296296
+3,{'max_depth': 5},Identity,Identity,PCA1,DT,0.8072222222222222
+4,{'max_depth': 3},Identity,Identity,PCA1,DT,0.6683333333333333
+5,{'max_depth': 1},Identity,Identity,PCA1,DT,0.4412962962962963
+0,{'n_neighbors': 8},Identity,Identity,PCA2,KNN,0.8970370370370371
+1,{'n_neighbors': 14},Identity,Identity,PCA2,KNN,0.8946296296296297
+2,{'n_neighbors': 20},Identity,Identity,PCA2,KNN,0.8896296296296297
+3,{'n_neighbors': 26},Identity,Identity,PCA2,KNN,0.8859259259259259
+4,{'n_neighbors': 2},Identity,Identity,PCA2,KNN,0.8811111111111111
+0,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,Identity,PCA2,NB,0.8416666666666667
+1,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,Identity,PCA2,NB,0.8411111111111111
+0,{'alpha': 1e-05},Identity,Identity,PCA2,Perceptron,0.6933333333333334
+1,{'alpha': 0.00017782794100389227},Identity,Identity,PCA2,Perceptron,0.6766666666666666
+2,{'alpha': 0.05623413251903491},Identity,Identity,PCA2,Perceptron,0.6674074074074074
+3,{'alpha': 0.0031622776601683794},Identity,Identity,PCA2,Perceptron,0.6327777777777778
+4,{'alpha': 1.0},Identity,Identity,PCA2,Perceptron,0.19537037037037036
+0,{'max_depth': 11},Identity,Identity,PCA2,DT,0.862037037037037
+1,{'max_depth': 9},Identity,Identity,PCA2,DT,0.8585185185185186
+2,{'max_depth': 7},Identity,Identity,PCA2,DT,0.8431481481481482
+3,{'max_depth': 5},Identity,Identity,PCA2,DT,0.8094444444444444
+4,{'max_depth': 3},Identity,Identity,PCA2,DT,0.7537037037037037
+5,{'max_depth': 1},Identity,Identity,PCA2,DT,0.4488888888888889
+0,{'n_neighbors': 8},Identity,Identity,PCA3,KNN,0.8992592592592593
+1,{'n_neighbors': 2},Identity,Identity,PCA3,KNN,0.8966666666666666
+2,{'n_neighbors': 14},Identity,Identity,PCA3,KNN,0.8951851851851852
+3,{'n_neighbors': 20},Identity,Identity,PCA3,KNN,0.8901851851851852
+4,{'n_neighbors': 26},Identity,Identity,PCA3,KNN,0.885
+0,"{'priors': array([0.24888889, 0.21351852, 0.21203704, 0.11462963, 0.10740741,
+       0.10351852])}",Identity,Identity,PCA3,NB,0.8401851851851851
+1,"{'priors': [0.167, 0.167, 0.167, 0.167, 0.166, 0.166]}",Identity,Identity,PCA3,NB,0.8396296296296296
+0,{'alpha': 0.00017782794100389227},Identity,Identity,PCA3,Perceptron,0.7096296296296296
+1,{'alpha': 0.0031622776601683794},Identity,Identity,PCA3,Perceptron,0.6796296296296296
+2,{'alpha': 1e-05},Identity,Identity,PCA3,Perceptron,0.6468518518518519
+3,{'alpha': 0.05623413251903491},Identity,Identity,PCA3,Perceptron,0.5337037037037037
+4,{'alpha': 1.0},Identity,Identity,PCA3,Perceptron,0.17722222222222223
+0,{'max_depth': 11},Identity,Identity,PCA3,DT,0.8566666666666667
+1,{'max_depth': 9},Identity,Identity,PCA3,DT,0.8518518518518519
+2,{'max_depth': 7},Identity,Identity,PCA3,DT,0.8396296296296296
+3,{'max_depth': 5},Identity,Identity,PCA3,DT,0.8090740740740741
+4,{'max_depth': 3},Identity,Identity,PCA3,DT,0.7533333333333333
+5,{'max_depth': 1},Identity,Identity,PCA3,DT,0.4488888888888889

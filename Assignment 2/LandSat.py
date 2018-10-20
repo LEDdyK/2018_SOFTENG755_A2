@@ -19,8 +19,8 @@ from sklearn.preprocessing import StandardScaler, MinMaxScaler, Normalizer
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 from sklearn.feature_selection import SelectKBest, f_regression
 from sklearn.decomposition import PCA
-
-
+from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
 
 random_seed = 755
 
@@ -32,7 +32,6 @@ Y = train.label
 
 del train['index']
 del test['index']
-
 
 # Feature Selection/Extraction
 def extract(data, slide=range, max_range=None):
@@ -47,27 +46,22 @@ def extract(data, slide=range, max_range=None):
 # Normalization/Standardization
 def row_identity(data):
     return data.T.T
-
 def row_standardized(data):
     return StandardScaler().fit_transform(data.T).T
-
 def row_minmax(data):
     return MinMaxScaler().fit_transform(data.T).T
-
 def row_max(data):
     return data/255.
 
+# data transformation functions
 row_transform = {'Identity':row_identity }
-col_scalling = {'Identity':None ,'ZScore':  StandardScaler}
+col_scaling = {'Identity':None, 'ZScore':StandardScaler}
 
 # Feature Extraction
-feature_extract = {'PCA1': PCA(n_components=2), 
-                   'PCA2': PCA(n_components=0.95) ,
-                   'PCA3': PCA(),
-                   'Identity': None 
-}
+feature_extract = {'Identity': None}
+
 # Cross Validation
-skf  = StratifiedKFold(n_splits=5, random_state=random_seed)
+skf = StratifiedKFold(n_splits=5, random_state=random_seed)
 
 # Hyperparameter Space
 tuned_parameters = {
@@ -78,20 +72,26 @@ score = 'f1_micro' # f1_macro
 
 # Models
 models = {
-    "Logistics": "",
-    "Neural":    ""
+    "Logistics": LogisticRegression(),
+    "Neural": MLPClassifier()
 }
 
-# train/test 
+# Matric
 cv = []
 holdout = []
+
+# Split datasets into features (X) and outputs (y)
 y_train0, X_train0 = extract(train)
 y_test0, X_test0 = extract(test)
+
+# transform the data via rows: rt_name = key, transformer = value
 for rt_name, transformer in row_transform.items():
     print("# Transforming row value by %s" % rt_name)
     X_train1 = transformer(X_train0)
     X_test1 = transformer(X_test0)
-    for sl_name, scaler in col_scalling.items():
+    
+    # scale the data via columns: sl_name = key, scaler = value
+    for sl_name, scaler in col_scaling.items():
         print("# Scaling column value by %s" % sl_name)
         if sl_name != 'Identity':
             sl = scaler()
@@ -101,6 +101,8 @@ for rt_name, transformer in row_transform.items():
         else: 
             X_train2 = X_train1.copy()
             X_test2 = X_test1.copy()
+            
+        # apply feature selection: fe_name = key, fe = value
         for fe_name, fe in feature_extract.items():
             print("# Features Selection/Extraction value by %s" % fe_name)
             if fe_name in ['PCA1', 'PCA2','PCA3']:
@@ -110,10 +112,11 @@ for rt_name, transformer in row_transform.items():
             else: 
                 X_train = X_train2.copy()
                 X_test = X_test2.copy()   
+                
+            # apply the models to the data: mkey = key, model = value
             for mkey, model in models.items():
                 print("# Staring fittimg model of %s" % mkey)
                 print()
-                
                 y_train = y_train0
                 y_test = y_test0
                 #y_train, X_train = extract(train)

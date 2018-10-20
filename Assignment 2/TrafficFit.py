@@ -20,6 +20,7 @@ random_seed = 755
 train = pd.read_csv("data/Traffic_flow//train.csv")
 test = pd.read_csv("data/Traffic_flow/test.csv")
 
+# Delete redundant cells
 del train['index']
 del test['index']
 
@@ -39,29 +40,24 @@ def extract(data, slide=range, max_range=None):
 # Normalization/Standardization
 def row_identity(data):
     return data
-
 def row_standardized(data):
     return StandardScaler().fit_transform(data.T).T
-
 def row_minmax(data):
     return MinMaxScaler().fit_transform(data.T).T
-
 def row_normal(data):
     return Normalizer(norm='l1').fit_transform(data)
-
 def log(data):
     return np.log(data+1)
 
-
+# data transformation functions
 row_transform = {'Identity':row_identity}
-col_scalling = {'Identity':None ,'MinMax': MinMaxScaler}
+col_scaling = {'Identity':None ,'MinMax':MinMaxScaler}
 
 # Feature Extraction
-feature_extract = {'Identity': None }
-
+feature_extract = {'Identity':None }
 
 # Cross Validation
-kf  = KFold(n_splits=5, random_state=random_seed)
+kf = KFold(n_splits=5, random_state=random_seed)
 
 # Hyperparameter Space
 tuned_parameters = {"BRidge": [{'alpha_1': np.logspace(2, -6, num=2), 
@@ -78,51 +74,48 @@ models = {
 # Matrix
 cv = []
 holdout = []
-y_train0, X_train0 = extract(train)
-y_test0, X_test0 = extract(test)
+
+# Split datasets into features (X) and outputs (y)
+y_train, X_train0 = extract(train)
+y_test, X_test0 = extract(test)
+
+# transform the data via rows: rt_name = key, transformer = value
 for rt_name, transformer in row_transform.items():
     print("# Transforming row value by %s" % rt_name)
     X_train1 = transformer(X_train0)
     X_test1 = transformer(X_test0)
-    for sl_name, scaler in col_scalling.items():
+    
+    # scale the data via columns: sl_name = key, scaler = value
+    for sl_name, scaler in col_scaling.items():
         print("# Scaling column value by %s" % sl_name)
         if sl_name != 'Identity':
             sl = scaler()
             sl.fit(X_train1)
             X_train = sl.transform(X_train1)
             X_test = sl.transform(X_test1)
-        else: 
+        else:
             X_train = X_train1.copy()
             X_test = X_test1.copy()
-        for mkey, model in models.items():
-            print("# Staring fittimg model of %s" % mkey)
-            print()
             
-            y_train = y_train0
-            y_test = y_test0
+        # apply the regression to the data: mkey = key, model = value
+        for mkey, model in models.items():
+            print("----------# Start fitting model of %s----------" % mkey)
+            # tune hyperparameters via GridSearchCV
             print("# Tuning hyper-parameters for %s" % score)
-            print()
-            # continue your sklearn code here...
-            start = time.time()
+            time_Start = time.time()
             clf = GridSearchCV(model, tuned_parameters[mkey], cv=kf, 
                                scoring=score)
             clf.fit(X_train, y_train)
-            end = time.time()
-            fitting_time = end - start
+            time_End = time.time()
+            fitting_time = time_End - time_Start
             
             print("Best parameters set found on train set:")
-            print()
             print(clf.best_params_)
-            print()
             print("Grid scores on train set:")
-            print()
             means = clf.cv_results_['mean_test_score']
             stds = clf.cv_results_['std_test_score']
-            for mean, std, params in zip(means, stds, clf.cv_results_['params']):
-                print("%0.3f (+/-%0.03f) for %r"
-                      % (mean, std * 2, params))
-            print()
             
+            # store details of regression to cv_res
             cv_res = pd.DataFrame([str(item) for item in clf.cv_results_['params']], columns=["paras"])
             cv_res['rt_name'] = rt_name
             cv_res['sl_name'] = sl_name
@@ -134,14 +127,11 @@ for rt_name, transformer in row_transform.items():
             cv.append(cv_res)
             
             print("Test Set Report:")
-            print()
             best_model = clf.best_estimator_
             y_true, y_pred = y_test, best_model.predict(X_test)
             print("R-Square: the % of information explain by the fitted target variable: ")
             r2 = r2_score(y_true, y_pred)
             print(r2 * 100)
-            print()
-            print()
             out = {'method':mkey,'paras': str(best_model.get_params()),'metrics':r2, 'rt_name': rt_name,
                 "sl_name":sl_name,"training_time": fitting_time, "NumOfFeatures": X_test.shape[1]
             }
@@ -149,15 +139,11 @@ for rt_name, transformer in row_transform.items():
 
 output_cv = pd.concat(cv)
 output_ho = pd.concat(holdout)
-
+output_cv.sort_values(inplace=True, ascending=False, by='metrics')
 output_ho.sort_values(inplace=True, ascending=False, by='metrics')
-
-output_ho.sort_values(inplace=True, ascending=False, by='metrics')
-
 output_cv.reset_index(inplace=True, drop=True)
 output_ho.reset_index(inplace=True, drop=True)
 
-
-
+# save results to .csv file
 output_cv.to_csv("data/Traffic_flow/cv_result.csv",index=False)
 output_ho.to_csv("data/Traffic_flow/ho_result.csv",index=False)

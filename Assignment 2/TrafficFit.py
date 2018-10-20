@@ -17,7 +17,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 random_seed = 755
 
 # Load data
-train = pd.read_csv("data/Traffic_flow//train.csv")
+train = pd.read_csv("data/Traffic_flow/train.csv")
 test = pd.read_csv("data/Traffic_flow/test.csv")
 
 # Delete redundant cells
@@ -60,8 +60,8 @@ feature_extract = {'Identity':None }
 kf = KFold(n_splits=5, random_state=random_seed)
 
 # Hyperparameter Space
-tuned_parameters = {"BRidge": [{'alpha_1': np.logspace(2, -6, num=2), 
-                                'lambda_1': np.logspace(2, -6, num=2), 
+tuned_parameters = {"BRidge": [{'alpha_1': np.logspace(2, -6, num=10), 
+                                'lambda_1': np.logspace(2, -6, num=10), 
                                 'fit_intercept': [True, False], 
                                 'normalize':[True, False]}]}
 score = 'neg_median_absolute_error' # 
@@ -126,6 +126,7 @@ for rt_name, transformer in row_transform.items():
             cv_res.reset_index(inplace=True)
             cv.append(cv_res)
             
+            # compare the results of the best model with the test set (true data)
             print("Test Set Report:")
             best_model = clf.best_estimator_
             y_true, y_pred = y_test, best_model.predict(X_test)
@@ -139,7 +140,7 @@ for rt_name, transformer in row_transform.items():
 
 output_cv = pd.concat(cv)
 output_ho = pd.concat(holdout)
-output_cv.sort_values(inplace=True, ascending=False, by='metrics')
+output_cv.sort_values(inplace=True, ascending=False, by='mean_validation_score')
 output_ho.sort_values(inplace=True, ascending=False, by='metrics')
 output_cv.reset_index(inplace=True, drop=True)
 output_ho.reset_index(inplace=True, drop=True)

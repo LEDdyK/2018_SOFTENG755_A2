@@ -71,7 +71,7 @@ location2 = [item+"_"+ str(num) for item in location for num in [1,2,3,4]]
 dat4 = pd.read_csv("data/Landsat/lantsat.csv", names=location2+["label"])
 dat4.label.value_counts() # classification
 dat4.iloc[:,16:20] # core
-train, test = train_test_split(dat4, test_size=0.1, stratify = dat4.label, 
+train, test = train_test_split(dat4, test_size=0.1, stratify=dat4.label, 
                                random_state=random_seed)
 writeData('data/Landsat', train, test)
 

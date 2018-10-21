@@ -1,0 +1,3 @@
+method,paras,metrics,rt_name,sl_name,training_time,NumOfFeatures
+BRidge,"{'alpha_1': 80, 'alpha_2': 1e-06, 'compute_score': False, 'copy_X': True, 'fit_intercept': False, 'lambda_1': 110, 'lambda_2': 1e-06, 'n_iter': 300, 'normalize': True, 'tol': 0.001, 'verbose': False}",0.9685739806508108,Identity,MinMax,487.44203448295593,450
+BRidge,"{'alpha_1': 80, 'alpha_2': 1e-06, 'compute_score': False, 'copy_X': True, 'fit_intercept': False, 'lambda_1': 100, 'lambda_2': 1e-06, 'n_iter': 300, 'normalize': True, 'tol': 0.001, 'verbose': False}",0.9682530388883117,Identity,Identity,450.72280263900757,450

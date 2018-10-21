@@ -65,11 +65,10 @@ skf = StratifiedKFold(n_splits=5, random_state=random_seed)
 
 # Hyperparameter Space
 tuned_parameters = {
-        "Logistics": [{'C':range(1, 121, 40),
+        "Logistics": [{'C':range(40, 101, 20),
                        'solver':['lbfgs', 'saga']}],
-        "Neural": [{'hidden_layer_sizes':[(20,),(40,)],
-                    'solver':['lbfgs', 'adam'],
-                    'alpha': [0.0001, 0.001]}]
+        "Neural": [{'hidden_layer_sizes':[(40,),(60,),(80,)],
+                    'alpha': [0.0005, 0.001, 0.005, 0.01]}]
 }
 
 # define scoring
@@ -77,8 +76,8 @@ score = 'f1_micro'
 
 # Models
 models = {
-    "Logistics": LogisticRegression(multi_class='multinomial', max_iter=10000),
-    "Neural": MLPClassifier(max_iter=10000)
+    "Logistics": LogisticRegression(multi_class='multinomial', max_iter=10000, random_state=random_seed),
+    "Neural": MLPClassifier(max_iter=10000, random_state=random_seed)
 }
 
 # Matrix
@@ -111,7 +110,7 @@ for rt_name, transformer in row_transform.items():
             if with_feat_sel == 1:
                 # Feature Selection: Model based feature selection via recursion and cross validation
                 print("Choosing Features...")
-                select = RFECV(RandomForestClassifier(), cv=skf, scoring=score)
+                select = RFECV(RandomForestClassifier(random_state=random_seed), cv=skf, scoring=score)
                 select.fit(X_train, y_train)
                 X_train_selected = select.transform(X_train)
                 X_test_selected = select.transform(X_test)

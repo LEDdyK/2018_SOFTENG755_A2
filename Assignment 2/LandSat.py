@@ -65,18 +65,20 @@ skf = StratifiedKFold(n_splits=5, random_state=random_seed)
 
 # Hyperparameter Space
 tuned_parameters = {
-        "Logistics": [{'C': np.logspace(-6, 2, num=8)}],
-        "Neural": [{'max_iter': [100000], 
-                    'alpha': np.logspace(-6, 0, num=6)}]
+        "Logistics": [{'C':range(1, 121, 40),
+                       'solver':['newton-cg','sag','lbfgs']}],
+        "Neural": [{'hidden_layer_sizes':[(20,),(40,)],
+                    'solver':['lbfgs', 'sgd', 'adam'],
+                    'alpha': [0.0001, 0.001]}]
 }
 
 # define scoring
-score = 'f1_micro' # f1_macro
+score = 'accuracy'
 
 # Models
 models = {
-    "Logistics": LogisticRegression(),
-    "Neural": MLPClassifier()
+    "Logistics": LogisticRegression(penalty='l2', multi_class='multinomial'),
+    "Neural": MLPClassifier('max_iter'=10000)
 }
 
 # Matric
@@ -105,58 +107,67 @@ for rt_name, transformer in row_transform.items():
             X_train = X_train1.copy()
             X_test = X_test1.copy()  
             
-        # Feature Selection: Model based feature selection via recursion and cross validation        
-        print("Choosing Features...")
-        select = RFECV(RandomForestClassifier(), cv=skf, scoring=score)
-        select.fit(X_train, y_train)
-        X_train_selected = select.transform(X_train)
-        X_test_selected = select.transform(X_test)
-        # display features selected via mask plot
-        mask = select.get_support()
-        plt.matshow(mask.reshape(1,-1), cmap='gray_r')
-        plt.xlabel('Index of Features')
-        
-        # apply the models to the data: mkey = key, model = value
-        for mkey, model in models.items():
-            print("----------# Start fitting model of %s----------" % mkey)
-            # tune hyperparameters via GridSearchCV
-            print("# Tuning hyper-parameters for %s" % score)
-            time_Start = time.time()
-            clf = GridSearchCV(model, tuned_parameters[mkey], cv=skf, 
-                               scoring=score)
-            clf.fit(X_train_selected, y_train)
-            time_End = time.time()
-            fitting_time = time_End - time_Start
+        for with_feat_sel in range(2):
+            if with_feat_sel == 1:
+                # Feature Selection: Model based feature selection via recursion and cross validation
+                print("Choosing Features...")
+                select = RFECV(RandomForestClassifier(), cv=skf, scoring=score)
+                select.fit(X_train, y_train)
+                X_train_selected = select.transform(X_train)
+                X_test_selected = select.transform(X_test)
+                # display features selected via mask plot
+                mask = select.get_support()
+                plt.matshow(mask.reshape(1,-1), cmap='gray_r')
+                plt.xlabel('Index of Features')
+            else:
+                print("trying without feature selection...")
+                X_train_selected = X_train
+                X_test_selected = X_test
             
-            print("Best hyperparameters set found on train set:")
-            print(clf.best_params_)
-            print("Grid scores on train set:")
-            means = clf.cv_results_['mean_test_score']
-            stds = clf.cv_results_['std_test_score']
-            
-            # store details of classification to cv_res
-            cv_res = pd.DataFrame([str(item) for item in clf.cv_results_['params']], columns=['params'])
-            cv_res['rt_name'] = rt_name
-            cv_res['sl_name'] = sl_name
-            cv_res['method'] = mkey
-            cv_res['features'] = str(select.get_support(indices=True))
-            cv_res['mean_validation_score'] = means
-            cv_res.sort_values(by='mean_validation_score', ascending=False, inplace=True)
-            cv_res.reset_index(inplace=True, drop=True)
-            cv.append(cv_res)
-            
-            # compare the results of the best model with the test set (true data)
-            print("Test Set Report:")
-            best_model = clf.best_estimator_
-            y_true, y_pred = y_test, best_model.predict(X_test_selected)
-            print("Accuracy classification score:")
-            acc = accuracy_score(y_true, y_pred)
-            print(acc * 100)
-            out = {'method':mkey,'paras': str(best_model.get_params()),'metrics':acc, 'rt_name': rt_name,
-                'sl_name':sl_name,'training_time': fitting_time, 'NumOfFeatures': X_test_selected.shape[1], 
-                'Features - index': str(select.get_support(indices=True))
-            }
-            holdout.append(pd.DataFrame(out,index=[0]))
+            # apply the models to the data: mkey = key, model = value
+            for mkey, model in models.items():
+                print("----------# Start fitting model of %s----------" % mkey)
+                # tune hyperparameters via GridSearchCV
+                print("# Tuning hyper-parameters for %s" % score)
+                time_Start = time.time()
+                clf = GridSearchCV(model, tuned_parameters[mkey], cv=skf, 
+                                   scoring=score)
+                clf.fit(X_train_selected, y_train)
+                time_End = time.time()
+                fitting_time = time_End - time_Start
+                
+                print("Best hyperparameters set found on train set:")
+                print(clf.best_params_)
+                print("Grid scores on train set:")
+                means = clf.cv_results_['mean_test_score']
+                stds = clf.cv_results_['std_test_score']
+                
+                # store details of classification to cv_res
+                cv_res = pd.DataFrame([str(item) for item in clf.cv_results_['params']], columns=['params'])
+                cv_res['rt_name'] = rt_name
+                cv_res['sl_name'] = sl_name
+                cv_res['method'] = mkey
+                if with_feat_sel == 1:
+                    cv_res['features'] = str(select.get_support(indices=True))
+                else:
+                    cv_res['features'] = 'all'
+                cv_res['mean_validation_score'] = means
+                cv_res.sort_values(by='mean_validation_score', ascending=False, inplace=True)
+                cv_res.reset_index(inplace=True, drop=True)
+                cv.append(cv_res)
+                
+                # compare the results of the best model with the test set (true data)
+                print("Test Set Report:")
+                best_model = clf.best_estimator_
+                y_true, y_pred = y_test, best_model.predict(X_test_selected)
+                print("Accuracy classification score:")
+                acc = accuracy_score(y_true, y_pred)
+                print(acc * 100)
+                out = {'method':mkey,'params': str(best_model.get_params()),'metrics':acc, 'rt_name':rt_name,
+                    'sl_name':sl_name,'training_time':fitting_time, 'NumOfFeatures':X_test_selected.shape[1], 
+                    'Features - index': cv_res['features']
+                }
+                holdout.append(pd.DataFrame(out,index=[0]))
 
 # for outputting results
 output_cv = pd.concat(cv)

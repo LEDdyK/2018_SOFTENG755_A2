@@ -1,0 +1,65 @@
+params,rt_name,sl_name,method,mean_validation_score
+"{'alpha': 0.003981071705534969, 'max_iter': 100000}",Identity,ZScore,Neural,0.9072222222222223
+"{'alpha': 1.584893192461114e-05, 'max_iter': 100000}",Identity,ZScore,Neural,0.9053703703703704
+"{'alpha': 0.00025118864315095795, 'max_iter': 100000}",Identity,ZScore,Neural,0.9053703703703704
+"{'alpha': 0.003981071705534969, 'max_iter': 1000}",Identity,ZScore,Neural,0.9038888888888889
+"{'alpha': 0.00025118864315095795, 'max_iter': 10000}",Identity,ZScore,Neural,0.9037037037037037
+"{'alpha': 0.00025118864315095795, 'max_iter': 1000}",Identity,ZScore,Neural,0.902962962962963
+"{'alpha': 1.584893192461114e-05, 'max_iter': 100}",Identity,ZScore,Neural,0.902962962962963
+"{'alpha': 1e-06, 'max_iter': 10000}",Identity,ZScore,Neural,0.9024074074074074
+"{'alpha': 0.003981071705534969, 'max_iter': 10000}",Identity,ZScore,Neural,0.9024074074074074
+"{'alpha': 0.003981071705534969, 'max_iter': 100}",Identity,ZScore,Neural,0.9020370370370371
+"{'alpha': 1e-06, 'max_iter': 1000}",Identity,ZScore,Neural,0.9018518518518519
+"{'alpha': 1.584893192461114e-05, 'max_iter': 1000}",Identity,ZScore,Neural,0.9018518518518519
+"{'alpha': 0.0630957344480193, 'max_iter': 10000}",Identity,ZScore,Neural,0.9018518518518519
+"{'alpha': 1.584893192461114e-05, 'max_iter': 10000}",Identity,ZScore,Neural,0.9012962962962963
+"{'alpha': 0.00025118864315095795, 'max_iter': 100}",Identity,ZScore,Neural,0.9007407407407407
+"{'alpha': 1e-06, 'max_iter': 100000}",Identity,ZScore,Neural,0.9007407407407407
+"{'alpha': 0.0630957344480193, 'max_iter': 1000}",Identity,ZScore,Neural,0.9001851851851852
+"{'alpha': 0.0630957344480193, 'max_iter': 100}",Identity,ZScore,Neural,0.8983333333333333
+"{'alpha': 0.0630957344480193, 'max_iter': 100000}",Identity,ZScore,Neural,0.897962962962963
+"{'alpha': 1e-06, 'max_iter': 100}",Identity,ZScore,Neural,0.897962962962963
+"{'alpha': 1.0, 'max_iter': 10000}",Identity,ZScore,Neural,0.8818518518518519
+"{'alpha': 1.0, 'max_iter': 1000}",Identity,ZScore,Neural,0.8814814814814815
+"{'alpha': 1.0, 'max_iter': 100000}",Identity,ZScore,Neural,0.8807407407407407
+"{'alpha': 1.0, 'max_iter': 100}",Identity,ZScore,Neural,0.8794444444444445
+{'C': 100.0},Identity,ZScore,Logistics,0.837037037037037
+{'C': 7.196856730011514},Identity,ZScore,Logistics,0.8366666666666667
+{'C': 0.5179474679231202},Identity,ZScore,Logistics,0.8335185185185185
+{'C': 100.0},Identity,Identity,Logistics,0.8325925925925926
+{'C': 7.196856730011514},Identity,Identity,Logistics,0.8324074074074074
+{'C': 0.5179474679231202},Identity,Identity,Logistics,0.825925925925926
+{'C': 0.03727593720314938},Identity,ZScore,Logistics,0.817037037037037
+{'C': 0.03727593720314938},Identity,Identity,Logistics,0.8018518518518518
+{'C': 0.0026826957952797246},Identity,Identity,Logistics,0.7792592592592592
+{'C': 0.00019306977288832496},Identity,Identity,Logistics,0.7712962962962963
+{'C': 0.0026826957952797246},Identity,ZScore,Logistics,0.7577777777777778
+"{'alpha': 0.0630957344480193, 'max_iter': 1000}",Identity,Identity,Neural,0.7455555555555555
+{'C': 1.3894954943731361e-05},Identity,Identity,Logistics,0.7424074074074074
+"{'alpha': 1.584893192461114e-05, 'max_iter': 1000}",Identity,Identity,Neural,0.7418518518518519
+"{'alpha': 1.0, 'max_iter': 100000}",Identity,Identity,Neural,0.7416666666666667
+"{'alpha': 1e-06, 'max_iter': 1000}",Identity,Identity,Neural,0.7411111111111112
+"{'alpha': 0.00025118864315095795, 'max_iter': 1000}",Identity,Identity,Neural,0.74
+"{'alpha': 1e-06, 'max_iter': 10000}",Identity,Identity,Neural,0.7372222222222222
+"{'alpha': 0.00025118864315095795, 'max_iter': 100}",Identity,Identity,Neural,0.7361111111111112
+"{'alpha': 0.003981071705534969, 'max_iter': 100}",Identity,Identity,Neural,0.7359259259259259
+"{'alpha': 1.0, 'max_iter': 100}",Identity,Identity,Neural,0.7322222222222222
+"{'alpha': 0.003981071705534969, 'max_iter': 100000}",Identity,Identity,Neural,0.7318518518518519
+"{'alpha': 0.00025118864315095795, 'max_iter': 10000}",Identity,Identity,Neural,0.7288888888888889
+{'C': 0.00019306977288832496},Identity,ZScore,Logistics,0.7287037037037037
+"{'alpha': 0.0630957344480193, 'max_iter': 10000}",Identity,Identity,Neural,0.7261111111111112
+"{'alpha': 0.003981071705534969, 'max_iter': 10000}",Identity,Identity,Neural,0.7257407407407407
+"{'alpha': 0.00025118864315095795, 'max_iter': 100000}",Identity,Identity,Neural,0.7255555555555555
+"{'alpha': 0.0630957344480193, 'max_iter': 100000}",Identity,Identity,Neural,0.7190740740740741
+"{'alpha': 1.584893192461114e-05, 'max_iter': 100000}",Identity,Identity,Neural,0.7188888888888889
+"{'alpha': 1.0, 'max_iter': 1000}",Identity,Identity,Neural,0.7142592592592593
+"{'alpha': 1e-06, 'max_iter': 100}",Identity,Identity,Neural,0.7131481481481482
+"{'alpha': 0.003981071705534969, 'max_iter': 1000}",Identity,Identity,Neural,0.7033333333333334
+"{'alpha': 1.584893192461114e-05, 'max_iter': 10000}",Identity,Identity,Neural,0.7005555555555556
+"{'alpha': 1.0, 'max_iter': 10000}",Identity,Identity,Neural,0.7001851851851851
+"{'alpha': 1e-06, 'max_iter': 100000}",Identity,Identity,Neural,0.6953703703703704
+"{'alpha': 0.0630957344480193, 'max_iter': 100}",Identity,Identity,Neural,0.695
+"{'alpha': 1.584893192461114e-05, 'max_iter': 100}",Identity,Identity,Neural,0.6916666666666667
+{'C': 1.3894954943731361e-05},Identity,ZScore,Logistics,0.64
+{'C': 1e-06},Identity,ZScore,Logistics,0.62
+{'C': 1e-06},Identity,Identity,Logistics,0.5853703703703703

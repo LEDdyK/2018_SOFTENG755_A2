@@ -56,15 +56,21 @@ col_scaling = {'Identity':None ,'MinMax':MinMaxScaler}
 # Feature Extraction
 feature_extract = {'Identity':None }
 
-# Cross Validation
+# Cross Validation: K Fold used for regression
 kf = KFold(n_splits=5, random_state=random_seed)
 
 # Hyperparameter Space
-tuned_parameters = {"BRidge": [{'alpha_1': np.logspace(2, -6, num=10), 
-                                'lambda_1': np.logspace(2, -6, num=10), 
-                                'fit_intercept': [True, False], 
+#From multiple tunings, the best models seemed to hold for the deafult alpha_1 
+#value and fit_intercept set to false.
+# Because we do not apply feature selection, we use the whole feature set thus
+#the model is prone to overfitting. To counter, we include a penalisation term, 
+#lambda_1 (default = 1^-6) of greater value to penalise the coefficient harder
+tuned_parameters = {"BRidge": [{'lambda_1': range(100, 301, 20), 
+                                'fit_intercept': [False], 
                                 'normalize':[True, False]}]}
-score = 'neg_median_absolute_error' # 
+
+# define scoring
+score = 'neg_mean_absolute_error' 
 
 # Models
 models = {
@@ -103,32 +109,32 @@ for rt_name, transformer in row_transform.items():
             # tune hyperparameters via GridSearchCV
             print("# Tuning hyper-parameters for %s" % score)
             time_Start = time.time()
-            clf = GridSearchCV(model, tuned_parameters[mkey], cv=kf, 
+            reg = GridSearchCV(model, tuned_parameters[mkey], cv=kf, 
                                scoring=score)
-            clf.fit(X_train, y_train)
+            reg.fit(X_train, y_train)
             time_End = time.time()
             fitting_time = time_End - time_Start
             
-            print("Best parameters set found on train set:")
-            print(clf.best_params_)
+            print("Best hyperparameters set found on train set:")
+            print(reg.best_params_)
             print("Grid scores on train set:")
-            means = clf.cv_results_['mean_test_score']
-            stds = clf.cv_results_['std_test_score']
+            means = reg.cv_results_['mean_test_score']
+            stds = reg.cv_results_['std_test_score']
             
             # store details of regression to cv_res
-            cv_res = pd.DataFrame([str(item) for item in clf.cv_results_['params']], columns=["paras"])
+            cv_res = pd.DataFrame([str(item) for item in reg.cv_results_['params']], columns=['params'])
+            cv_res['params'] = reg.cv_results_['params']
             cv_res['rt_name'] = rt_name
             cv_res['sl_name'] = sl_name
             cv_res['method'] = mkey
             cv_res['mean_validation_score'] = means
             cv_res.sort_values(by='mean_validation_score', ascending=False, inplace=True)
             cv_res.reset_index(inplace=True,drop=True)
-            cv_res.reset_index(inplace=True)
             cv.append(cv_res)
             
             # compare the results of the best model with the test set (true data)
             print("Test Set Report:")
-            best_model = clf.best_estimator_
+            best_model = reg.best_estimator_
             y_true, y_pred = y_test, best_model.predict(X_test)
             print("R-Square: the % of information explain by the fitted target variable: ")
             r2 = r2_score(y_true, y_pred)
@@ -138,11 +144,12 @@ for rt_name, transformer in row_transform.items():
             }
             holdout.append(pd.DataFrame(out,index=[0]))
 
+# for outputting results
 output_cv = pd.concat(cv)
-output_ho = pd.concat(holdout)
 output_cv.sort_values(inplace=True, ascending=False, by='mean_validation_score')
-output_ho.sort_values(inplace=True, ascending=False, by='metrics')
 output_cv.reset_index(inplace=True, drop=True)
+output_ho = pd.concat(holdout)
+output_ho.sort_values(inplace=True, ascending=False, by='metrics')
 output_ho.reset_index(inplace=True, drop=True)
 
 # save results to .csv file

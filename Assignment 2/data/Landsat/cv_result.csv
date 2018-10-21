@@ -1,0 +1,85 @@
+params,rt_name,sl_name,method,features,mean_validation_score
+"{'alpha': 0.001, 'hidden_layer_sizes': (40,), 'solver': 'adam'}",Identity,ZScore,Neural,all,0.9022222222222223
+"{'alpha': 0.0001, 'hidden_layer_sizes': (40,), 'solver': 'adam'}",Identity,ZScore,Neural,all,0.9001851851851852
+"{'alpha': 0.0001, 'hidden_layer_sizes': (40,), 'solver': 'adam'}",Identity,ZScore,Neural,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8981481481481481
+"{'alpha': 0.001, 'hidden_layer_sizes': (40,), 'solver': 'adam'}",Identity,ZScore,Neural,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8957407407407407
+"{'alpha': 0.001, 'hidden_layer_sizes': (20,), 'solver': 'adam'}",Identity,ZScore,Neural,all,0.8944444444444445
+"{'alpha': 0.0001, 'hidden_layer_sizes': (20,), 'solver': 'adam'}",Identity,ZScore,Neural,all,0.894074074074074
+"{'alpha': 0.0001, 'hidden_layer_sizes': (20,), 'solver': 'adam'}",Identity,ZScore,Neural,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8933333333333333
+"{'alpha': 0.001, 'hidden_layer_sizes': (20,), 'solver': 'adam'}",Identity,ZScore,Neural,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8892592592592593
+"{'alpha': 0.0001, 'hidden_layer_sizes': (40,), 'solver': 'lbfgs'}",Identity,ZScore,Neural,all,0.8861111111111111
+"{'alpha': 0.001, 'hidden_layer_sizes': (40,), 'solver': 'lbfgs'}",Identity,ZScore,Neural,all,0.885
+"{'alpha': 0.001, 'hidden_layer_sizes': (40,), 'solver': 'lbfgs'}",Identity,ZScore,Neural,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8838888888888888
+"{'alpha': 0.0001, 'hidden_layer_sizes': (40,), 'solver': 'lbfgs'}",Identity,ZScore,Neural,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8772222222222222
+"{'alpha': 0.0001, 'hidden_layer_sizes': (20,), 'solver': 'lbfgs'}",Identity,ZScore,Neural,all,0.8701851851851852
+"{'alpha': 0.0001, 'hidden_layer_sizes': (20,), 'solver': 'lbfgs'}",Identity,ZScore,Neural,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8690740740740741
+"{'alpha': 0.001, 'hidden_layer_sizes': (20,), 'solver': 'lbfgs'}",Identity,ZScore,Neural,all,0.8681481481481481
+"{'alpha': 0.001, 'hidden_layer_sizes': (20,), 'solver': 'lbfgs'}",Identity,ZScore,Neural,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8679629629629629
+"{'C': 81, 'solver': 'saga'}",Identity,ZScore,Logistics,all,0.8611111111111112
+"{'C': 81, 'solver': 'lbfgs'}",Identity,ZScore,Logistics,all,0.8609259259259259
+"{'C': 41, 'solver': 'lbfgs'}",Identity,ZScore,Logistics,all,0.8607407407407407
+"{'C': 41, 'solver': 'saga'}",Identity,ZScore,Logistics,all,0.8605555555555555
+"{'C': 1, 'solver': 'saga'}",Identity,ZScore,Logistics,all,0.8596296296296296
+"{'C': 1, 'solver': 'lbfgs'}",Identity,ZScore,Logistics,all,0.8596296296296296
+"{'C': 81, 'solver': 'lbfgs'}",Identity,Identity,Logistics,all,0.8592592592592593
+"{'C': 1, 'solver': 'lbfgs'}",Identity,Identity,Logistics,all,0.8590740740740741
+"{'C': 41, 'solver': 'lbfgs'}",Identity,Identity,Logistics,all,0.8585185185185186
+"{'C': 81, 'solver': 'saga'}",Identity,ZScore,Logistics,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8572222222222222
+"{'C': 81, 'solver': 'lbfgs'}",Identity,ZScore,Logistics,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8572222222222222
+"{'C': 41, 'solver': 'saga'}",Identity,ZScore,Logistics,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8572222222222222
+"{'C': 41, 'solver': 'lbfgs'}",Identity,ZScore,Logistics,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8572222222222222
+"{'C': 81, 'solver': 'lbfgs'}",Identity,Identity,Logistics,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.8555555555555555
+"{'C': 1, 'solver': 'lbfgs'}",Identity,Identity,Logistics,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.8555555555555555
+"{'C': 1, 'solver': 'saga'}",Identity,ZScore,Logistics,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8553703703703703
+"{'C': 1, 'solver': 'lbfgs'}",Identity,ZScore,Logistics,"[ 1  3  4  5  7  8  9 12 13 14 15 16 17 18 19 20 21 23 25 27 28 29 31 32
+ 35]",0.8553703703703703
+"{'C': 41, 'solver': 'lbfgs'}",Identity,Identity,Logistics,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.8546296296296296
+"{'alpha': 0.001, 'hidden_layer_sizes': (20,), 'solver': 'lbfgs'}",Identity,Identity,Neural,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.8090740740740741
+"{'C': 1, 'solver': 'saga'}",Identity,Identity,Logistics,all,0.8046296296296296
+"{'C': 41, 'solver': 'saga'}",Identity,Identity,Logistics,all,0.8044444444444444
+"{'C': 81, 'solver': 'saga'}",Identity,Identity,Logistics,all,0.8044444444444444
+"{'C': 41, 'solver': 'saga'}",Identity,Identity,Logistics,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.8038888888888889
+"{'C': 81, 'solver': 'saga'}",Identity,Identity,Logistics,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.8037037037037037
+"{'C': 1, 'solver': 'saga'}",Identity,Identity,Logistics,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.8035185185185185
+"{'alpha': 0.0001, 'hidden_layer_sizes': (20,), 'solver': 'lbfgs'}",Identity,Identity,Neural,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.7972222222222223
+"{'alpha': 0.001, 'hidden_layer_sizes': (40,), 'solver': 'lbfgs'}",Identity,Identity,Neural,all,0.7653703703703704
+"{'alpha': 0.0001, 'hidden_layer_sizes': (40,), 'solver': 'lbfgs'}",Identity,Identity,Neural,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.7388888888888889
+"{'alpha': 0.001, 'hidden_layer_sizes': (20,), 'solver': 'adam'}",Identity,Identity,Neural,all,0.7294444444444445
+"{'alpha': 0.001, 'hidden_layer_sizes': (40,), 'solver': 'adam'}",Identity,Identity,Neural,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.7227777777777777
+"{'alpha': 0.0001, 'hidden_layer_sizes': (20,), 'solver': 'adam'}",Identity,Identity,Neural,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.7162962962962963
+"{'alpha': 0.0001, 'hidden_layer_sizes': (40,), 'solver': 'adam'}",Identity,Identity,Neural,all,0.715925925925926
+"{'alpha': 0.0001, 'hidden_layer_sizes': (40,), 'solver': 'adam'}",Identity,Identity,Neural,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.7124074074074074
+"{'alpha': 0.001, 'hidden_layer_sizes': (20,), 'solver': 'lbfgs'}",Identity,Identity,Neural,all,0.7092592592592593
+"{'alpha': 0.001, 'hidden_layer_sizes': (40,), 'solver': 'adam'}",Identity,Identity,Neural,all,0.7090740740740741
+"{'alpha': 0.001, 'hidden_layer_sizes': (20,), 'solver': 'adam'}",Identity,Identity,Neural,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.707962962962963
+"{'alpha': 0.0001, 'hidden_layer_sizes': (20,), 'solver': 'adam'}",Identity,Identity,Neural,all,0.7016666666666667
+"{'alpha': 0.001, 'hidden_layer_sizes': (40,), 'solver': 'lbfgs'}",Identity,Identity,Neural,"[ 1  2  3  4  5  6  8  9 10 11 12 13 14 15 16 17 18 19 20 21 23 24 25 26
+ 27 28 29 30 31 32 33]",0.6594444444444445
+"{'alpha': 0.0001, 'hidden_layer_sizes': (20,), 'solver': 'lbfgs'}",Identity,Identity,Neural,all,0.61
+"{'alpha': 0.0001, 'hidden_layer_sizes': (40,), 'solver': 'lbfgs'}",Identity,Identity,Neural,all,0.5905555555555555

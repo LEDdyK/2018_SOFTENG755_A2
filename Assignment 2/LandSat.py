@@ -66,22 +66,22 @@ skf = StratifiedKFold(n_splits=5, random_state=random_seed)
 # Hyperparameter Space
 tuned_parameters = {
         "Logistics": [{'C':range(1, 121, 40),
-                       'solver':['newton-cg','sag','lbfgs']}],
+                       'solver':['lbfgs', 'saga']}],
         "Neural": [{'hidden_layer_sizes':[(20,),(40,)],
-                    'solver':['lbfgs', 'sgd', 'adam'],
+                    'solver':['lbfgs', 'adam'],
                     'alpha': [0.0001, 0.001]}]
 }
 
 # define scoring
-score = 'accuracy'
+score = 'f1_micro'
 
 # Models
 models = {
-    "Logistics": LogisticRegression(multi_class='multinomial'),
-    "Neural": MLPClassifier('max_iter'=10000)
+    "Logistics": LogisticRegression(multi_class='multinomial', max_iter=10000),
+    "Neural": MLPClassifier(max_iter=10000)
 }
 
-# Matric
+# Matrix
 cv = []
 holdout = []
 

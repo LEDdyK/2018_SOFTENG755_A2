@@ -77,7 +77,7 @@ score = 'accuracy'
 
 # Models
 models = {
-    "Logistics": LogisticRegression(penalty='l2', multi_class='multinomial'),
+    "Logistics": LogisticRegression(multi_class='multinomial'),
     "Neural": MLPClassifier('max_iter'=10000)
 }
 

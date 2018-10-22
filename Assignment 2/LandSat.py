@@ -2,24 +2,17 @@
 """
 Created on Wed Aug 29 17:49:41 2018
 
-@author: Junjie
+@author: Junjie/Lite
 """
 
 import time as time
-import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-from timeit import default_timer as timer
 from sklearn.model_selection import GridSearchCV
-from sklearn.metrics import classification_report
 from sklearn.model_selection import StratifiedKFold
-from sklearn.model_selection import cross_val_score
-from sklearn.pipeline import Pipeline
-from sklearn.preprocessing import StandardScaler, MinMaxScaler, Normalizer
-from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
-from sklearn.feature_selection import SelectKBest, f_regression
-from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+from sklearn.metrics import accuracy_score
 from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
 from sklearn.feature_selection import RFECV

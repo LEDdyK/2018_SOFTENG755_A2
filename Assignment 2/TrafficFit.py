@@ -2,7 +2,7 @@
 """
 Created on Wed Aug 29 15:48:35 2018
 
-@author: Junjie
+@author: Junjie/Lite
 """
 
 import time as time

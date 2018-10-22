@@ -90,10 +90,10 @@ skf  = KFold(n_splits=5, random_state=random_seed)
 # Models
 models = {
     "kmeans": KMeans(random_state=random_seed),
-    "GMM_full": GaussianMixture( init_params='random', covariance_type = 'full'),
-    "GMM_tied": GaussianMixture( init_params='random', covariance_type = 'tied'),
-    "GMM_diag": GaussianMixture( init_params='random', covariance_type = 'diag'),
-    "GMM_spherical": GaussianMixture( init_params='random', covariance_type = 'spherical')   
+    "GMM_full": GaussianMixture( init_params='random', covariance_type = 'full', random_state=random_seed),
+    "GMM_tied": GaussianMixture( init_params='random', covariance_type = 'tied', random_state=random_seed),
+    "GMM_diag": GaussianMixture( init_params='random', covariance_type = 'diag', random_state=random_seed),
+    "GMM_spherical": GaussianMixture( init_params='random', covariance_type = 'spherical', random_state=random_seed)   
 }
 
 # train/test 

@@ -70,7 +70,7 @@ for params in cv_neural_na['params']:
         cv_neural_na_01 = fill_list(cv_neural_na_01, params, cv_neural_na['mean_validation_score'][step])
     step+=1
 
-# create plot
+# create plot for neural network
 fig, ax = plt.subplots()
 index = np.arange(3)
 bw=0.2
@@ -122,7 +122,7 @@ for params in cv_logreg_na['params']:
         cv_logreg_na_100 = fill_list(cv_logreg_na_100, params, cv_logreg_na['mean_validation_score'][step])
     step+=1
 
-# create plot
+# create plot for logistic regression
 fig, ax = plt.subplots()
 index = np.arange(2)
 bw=0.13
@@ -144,3 +144,63 @@ plt.legend()
 plt.tight_layout()
 plt.show
 plt.savefig('data/Landsat/plots/LR_hyp_res.png')
+
+
+# plot best models against true results
+import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.neural_network import MLPClassifier
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score
+
+random_seed = 755
+
+# Load data
+train = pd.read_csv("data/Landsat/train.csv")
+test = pd.read_csv("data/Landsat/test.csv")
+del train['index']
+del test['index']
+
+# Feature Selection/Extraction
+def extract(data, slide=range, max_range=None):
+    if callable(slide):
+        if max_range is None:
+            return data.label.values, data.iloc[:, slide(0, data.shape[1]-1)].values
+        if max_range is not None:
+            return data.label.values, data.iloc[:, slide(0, max_range)].values
+    if isinstance(slide ,list): 
+        return data.label.values, data.iloc[:, list].values
+# Normalization/Standardization
+def row_identity(data):
+    return data.T.T
+
+# Split datasets into features (X) and outputs (y)
+Y_train, X_train = extract(train)
+Y_test, X_test = extract(test)
+# preprocess data
+X_train = row_identity(X_train)
+X_test = row_identity(X_test)
+sl = StandardScaler()
+sl.fit(X_train)
+X_train = sl.transform(X_train)
+X_test = sl.transform(X_test)
+
+# modelling
+model_logreg = LogisticRegression(C=60,solver='lbfgs',
+                                  multi_class='multinomial',max_iter=10000,
+                                  random_state=random_seed)
+model_logreg.fit(X_train, Y_train)
+model_neural = MLPClassifier(alpha=0.005,hidden_layer_sizes=(80,),
+                             max_iter=10000,random_state=random_seed)
+model_neural.fit(X_train, Y_train)
+
+y_pred_logreg = model_logreg.predict(X_test)
+print("Accuracy classification score:")
+acc_logreg = accuracy_score(Y_test, y_pred_logreg)
+print(acc_logreg * 100)
+
+y_pred_neural = model_neural.predict(X_test)
+print("Accuracy classification score:")
+acc_neural = accuracy_score(Y_test, y_pred_neural)
+print(acc_neural * 100)
+

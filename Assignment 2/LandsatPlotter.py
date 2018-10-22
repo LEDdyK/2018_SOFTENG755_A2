@@ -186,7 +186,7 @@ def plot_heatmap(Y_test, y_pred, title):
     heatmap = heatmap.get_figure()
     heatmap.savefig('data/Landsat/plots/' + title + '.png')
 
-# Split datasets into features (X) and outputs (y)
+# Split datasets into features (X) and outputs (Y)
 Y_train, X_train = extract(train)
 Y_test, X_test = extract(test)
 # preprocess data
@@ -197,7 +197,7 @@ sl.fit(X_train)
 X_train = sl.transform(X_train)
 X_test = sl.transform(X_test)
 
-# modelling
+# modelling best results according to ho_result
 model_logreg = LogisticRegression(C=60,solver='lbfgs',
                                   multi_class='multinomial',max_iter=10000,
                                   random_state=random_seed)

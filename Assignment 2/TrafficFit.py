@@ -74,7 +74,7 @@ score = 'neg_mean_absolute_error'
 
 # Models
 models = {
-    "BRidge": BayesianRidge(random_state=random_seed)
+    "BRidge": BayesianRidge()
 }
 
 # Matrix

@@ -34,7 +34,7 @@ step = 0
 fill_list = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 for params in cv_results['params']:
     for val in range(60, 201, 10):
-        if str(val) in params:
+        if (': ' + str(val)) in params:
             fill_list[int((val-60)/10)] = cv_results['mean_validation_score'][step]*-1
     step+=1
         

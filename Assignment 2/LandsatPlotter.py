@@ -145,13 +145,13 @@ plt.tight_layout()
 plt.show
 plt.savefig('data/Landsat/plots/LR_hyp_res.png')
 
-
 # plot best models against true results
 import pandas as pd
+import seaborn as sn
 from sklearn.linear_model import LogisticRegression
 from sklearn.neural_network import MLPClassifier
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import accuracy_score, confusion_matrix
 
 random_seed = 755
 
@@ -173,6 +173,18 @@ def extract(data, slide=range, max_range=None):
 # Normalization/Standardization
 def row_identity(data):
     return data.T.T
+# Heatmap plotting
+def plot_heatmap(Y_test, y_pred, title):
+    fig, ax = plt.subplots()
+    labels = ['1','2','3','4','5','7']
+    cm = confusion_matrix(Y_test, y_pred)
+    cm = cm.astype('float')/cm.sum(axis=1)[:, np.newaxis]
+    cmdf = pd.DataFrame(cm, labels, labels)
+    hmplt = plt.axes()
+    heatmap = sn.heatmap(cmdf, cmap=plt.get_cmap('Reds'), annot=True, ax=hmplt)
+    hmplt.set_title(title)
+    heatmap = heatmap.get_figure()
+    heatmap.savefig('data/Landsat/plots/' + title + '.png')
 
 # Split datasets into features (X) and outputs (y)
 Y_train, X_train = extract(train)
@@ -195,12 +207,13 @@ model_neural = MLPClassifier(alpha=0.005,hidden_layer_sizes=(80,),
 model_neural.fit(X_train, Y_train)
 
 y_pred_logreg = model_logreg.predict(X_test)
-print("Accuracy classification score:")
+print("Accuracy classification score (LogReg):")
 acc_logreg = accuracy_score(Y_test, y_pred_logreg)
 print(acc_logreg * 100)
+plot_heatmap(Y_test, y_pred_logreg, 'Heatmap - Logistic Regression')
 
 y_pred_neural = model_neural.predict(X_test)
-print("Accuracy classification score:")
+print("Accuracy classification score (Neural):")
 acc_neural = accuracy_score(Y_test, y_pred_neural)
 print(acc_neural * 100)
-
+plot_heatmap(Y_test, y_pred_neural, 'Heatmap - Artificial Neural Networks')

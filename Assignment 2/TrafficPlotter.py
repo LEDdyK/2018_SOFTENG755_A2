@@ -14,8 +14,12 @@ cv_results = pd.read_csv("data/Traffic_flow/cv_result.csv")
 # load the best predictors
 ho_results = pd.read_csv("data/Traffic_flow/ho_result.csv")
 
+# save the best features
+best_feat_set = cv_results['features'][0]
+
 # remove unimportant cells
 cv_results = cv_results[cv_results['sl_name']=='MinMax']
+cv_results = cv_results[cv_results['features']==best_feat_set]
 ho_results = ho_results[ho_results['sl_name']=='MinMax']
 cv_results.reset_index(drop=True,inplace=True)
 step = 0
@@ -27,9 +31,14 @@ cv_results.reset_index(drop=True,inplace=True)
 
 # sort the items by lambda_1 in params
 step = 0
-fill_list = [0,0,0,0,0,0,0,0,0,0,0]
-x_axis = np.arange(100, 301, 20)
+fill_list = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 for params in cv_results['params']:
+    for val in range(60, 201, 10):
+        if str(val) in params:
+            fill_list[int((val-60)/10)] = cv_results['mean_validation_score'][step]*-1
+    step+=1
+        
+"""
     if '100' in params:
         fill_list[0] = cv_results['mean_validation_score'][step]*-1
     elif '120' in params:
@@ -53,9 +62,11 @@ for params in cv_results['params']:
     elif '300' in params:
         fill_list[10] = cv_results['mean_validation_score'][step]*-1
     step += 1
+"""
     
 # plot results
 fig, ax = plt.subplots()
+x_axis = np.arange(60, 201, 10)
 plt.plot(x_axis, fill_list)
 plt.xticks(x_axis)
 plt.xlabel('Lambda 1')
@@ -63,6 +74,25 @@ plt.ylabel('mean absolute error')
 plt.title('Hyperparameter Results - Bayesisan Ridge Regression')
 plt.show
 plt.savefig('data/Traffic_flow/plots/BRR_MAS.png')
+
+# convert string to array of feature indexes
+# remove odd strings
+splits = best_feat_set.split('\r\n')
+merge = ''
+for sec in splits:
+    merge+=sec
+splits = merge.split('  ')
+merge = ''
+for sec in splits:
+    merge = merge + ' ' + sec
+splits = merge.split(' [ ')
+splits = splits[1].split(']')
+splits = splits[0].split(' ')
+# convert str to int
+step = 0
+for i in splits:
+    splits[step] = int(i)
+    step+=1
 
 # plot best model against true results
 import pandas as pd
@@ -74,9 +104,9 @@ from sklearn.metrics import mean_absolute_error, r2_score
 def extract(data, slide=range, max_range=None):
     if callable(slide):
         if max_range is None:
-            return data['Segment23_(t+1)'].values, data.iloc[:, slide(0, data.shape[1]-1)].values
+            return data['Segment23_(t+1)'].values, data.iloc[:, slide(1, data.shape[1]-1)].values
         if max_range is not None:
-            return data['Segment23_(t+1)'].values, data.iloc[:, slide(0, max_range)].values
+            return data['Segment23_(t+1)'].values, data.iloc[:, slide(1, max_range)].values
     if isinstance(slide ,list): 
         return data['Segment23_(t+1)'].values, data.iloc[:, list].values
 # Normalization/Standardization
@@ -91,13 +121,20 @@ test = pd.read_csv("data/Traffic_flow/test.csv")
 del train['index']
 del test['index']
 
+# Eliminate features
+train0 = train['Segment23_(t+1)'].to_frame()
+test0 = test['Segment23_(t+1)'].to_frame()
+for i in splits:
+    train0 = train0.join(train.iloc[:,i])
+    test0 = test0.join(test.iloc[:,i])
+
 # Split datasets into features (X) and outputs (Y)
-Y_train, X_train = extract(train)
-Y_test, X_test = extract(test)
+Y_train, X_trainF = extract(train0)
+Y_test, X_testF = extract(test0)
 
 # preprocess data
-X_train = row_identity(X_train)
-X_test = row_identity(X_test)
+X_train = row_identity(X_trainF)
+X_test = row_identity(X_testF)
 sl = MinMaxScaler()
 sl.fit(X_train)
 X_train = sl.transform(X_train)

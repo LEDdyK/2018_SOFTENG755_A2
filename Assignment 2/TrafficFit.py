@@ -8,10 +8,12 @@ Created on Wed Aug 29 15:48:35 2018
 import time as time
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import KFold
 from sklearn.preprocessing import StandardScaler, Normalizer, MinMaxScaler
 from sklearn.linear_model import BayesianRidge
+from sklearn.feature_selection import SelectKBest, f_regression
 from sklearn.metrics import mean_squared_error, r2_score
 
 random_seed = 755
@@ -36,6 +38,8 @@ def extract(data, slide=range, max_range=None):
             return data['Segment23_(t+1)'].values, data.iloc[:, slide(0, max_range)].values
     if isinstance(slide ,list): 
         return data['Segment23_(t+1)'].values, data.iloc[:, list].values
+    
+
 
 # Normalization/Standardization
 def row_identity(data):
@@ -54,7 +58,10 @@ row_transform = {'Identity':row_identity}
 col_scaling = {'Identity':None ,'MinMax':MinMaxScaler}
 
 # Feature Extraction
-feature_extract = {'Identity':None }
+feature_extract = {'Quart_1': SelectKBest(f_regression, k=112), 
+                   'Half': SelectKBest(f_regression, k=225),
+                   'Quart_3': SelectKBest(f_regression, k=338), 
+                   'All': None}
 
 # Cross Validation: K Fold used for regression
 kf = KFold(n_splits=5, random_state=random_seed)
@@ -65,16 +72,14 @@ kf = KFold(n_splits=5, random_state=random_seed)
 # Because we do not apply feature selection, we use the whole feature set thus
 #the model is prone to overfitting. To counter, we include a penalisation term, 
 #lambda_1 (default = 1^-6) of greater value to penalise the coefficient harder
-tuned_parameters = {"BRidge": [{'lambda_1': range(100, 301, 20), 
-                                'fit_intercept': [False], 
-                                'normalize':[True, False]}]}
+tuned_parameters = {"BRidge": [{'lambda_1': range(60, 201, 10)}]}
 
 # define scoring
 score = 'neg_mean_absolute_error' 
 
 # Models
 models = {
-    "BRidge": BayesianRidge()
+    "BRidge": BayesianRidge(fit_intercept=False, normalize=False)
 }
 
 # Matrix
@@ -103,46 +108,67 @@ for rt_name, transformer in row_transform.items():
             X_train = X_train1.copy()
             X_test = X_test1.copy()
             
-        # apply the regression to the data: mkey = key, model = value
-        for mkey, model in models.items():
-            print("----------# Start fitting model of %s----------" % mkey)
-            # tune hyperparameters via GridSearchCV
-            print("# Tuning hyper-parameters for %s" % score)
-            time_Start = time.time()
-            reg = GridSearchCV(model, tuned_parameters[mkey], cv=kf, 
-                               scoring=score)
-            reg.fit(X_train, y_train)
-            time_End = time.time()
-            fitting_time = time_End - time_Start
-            
-            print("Best hyperparameters set found on train set:")
-            print(reg.best_params_)
-            print("Grid scores on train set:")
-            means = reg.cv_results_['mean_test_score']
-            stds = reg.cv_results_['std_test_score']
-            
-            # store details of regression to cv_res
-            cv_res = pd.DataFrame([str(item) for item in reg.cv_results_['params']], columns=['params'])
-            cv_res['params'] = reg.cv_results_['params']
-            cv_res['rt_name'] = rt_name
-            cv_res['sl_name'] = sl_name
-            cv_res['method'] = mkey
-            cv_res['mean_validation_score'] = means
-            cv_res.sort_values(by='mean_validation_score', ascending=False, inplace=True)
-            cv_res.reset_index(inplace=True,drop=True)
-            cv.append(cv_res)
-            
-            # compare the results of the best model with the test set (true data)
-            print("Test Set Report:")
-            best_model = reg.best_estimator_
-            y_true, y_pred = y_test, best_model.predict(X_test)
-            print("R-Square: the % of information explain by the fitted target variable: ")
-            r2 = r2_score(y_true, y_pred)
-            print(r2 * 100)
-            out = {'method':mkey,'paras': str(best_model.get_params()),'metrics':r2, 'rt_name': rt_name,
-                "sl_name":sl_name,"training_time": fitting_time, "NumOfFeatures": X_test.shape[1]
-            }
-            holdout.append(pd.DataFrame(out,index=[0]))
+        #for fe_name, fe in feature_extract.items():
+        for fe_count in range(45, 451, 45):
+            #if fe_name == 'All':
+            if fe_count == 450:
+                print("Running with all features...")
+                X_train_selected = X_train
+                X_test_selected = X_test
+            else:
+                # Feature Selection via f regression
+                print("Choosing %d features..." % fe_count)
+                fe = SelectKBest(f_regression, k=fe_count)
+                fe.fit(X_train, y_train)
+                X_train_selected = fe.transform(X_train)
+                X_test_selected = fe.transform(X_test)
+                # display features selected via mask plot
+                mask = fe.get_support()
+                plt.matshow(mask.reshape(1,-1), cmap='gray_r')
+                plt.xlabel('Index of Features')
+                
+            # apply the regression to the data: mkey = key, model = value
+            for mkey, model in models.items():
+                print("----------# Start fitting model of %s----------" % mkey)
+                # tune hyperparameters via GridSearchCV
+                print("# Tuning hyper-parameters for %s" % score)
+                time_Start = time.time()
+                reg = GridSearchCV(model, tuned_parameters[mkey], cv=kf, 
+                                   scoring=score)
+                reg.fit(X_train_selected, y_train)
+                time_End = time.time()
+                fitting_time = time_End - time_Start
+                
+                print("Best hyperparameters set found on train set:")
+                print(reg.best_params_)
+                print("Grid scores on train set:")
+                means = reg.cv_results_['mean_test_score']
+                stds = reg.cv_results_['std_test_score']
+                
+                # store details of regression to cv_res
+                cv_res = pd.DataFrame([str(item) for item in reg.cv_results_['params']], columns=['params'])
+                cv_res['params'] = reg.cv_results_['params']
+                cv_res['rt_name'] = rt_name
+                cv_res['sl_name'] = sl_name
+                cv_res['method'] = mkey
+                cv_res['features'] = str(fe.get_support(indices=True))
+                cv_res['mean_validation_score'] = means
+                cv_res.sort_values(by='mean_validation_score', ascending=False, inplace=True)
+                cv_res.reset_index(inplace=True,drop=True)
+                cv.append(cv_res)
+                
+                # compare the results of the best model with the test set (true data)
+                print("Test Set Report:")
+                best_model = reg.best_estimator_
+                y_true, y_pred = y_test, best_model.predict(X_test_selected)
+                print("R-Square: the % of information explain by the fitted target variable: ")
+                r2 = r2_score(y_true, y_pred)
+                print(r2 * 100)
+                out = {'method':mkey,'paras': str(best_model.get_params()),'metrics':r2, 'rt_name': rt_name,
+                    "sl_name":sl_name,"training_time": fitting_time, "NumOfFeatures": X_test_selected.shape[1],
+                    'Features - index': cv_res['features']
+                }
+                holdout.append(pd.DataFrame(out,index=[0]))
 
 # for outputting results
 output_cv = pd.concat(cv)

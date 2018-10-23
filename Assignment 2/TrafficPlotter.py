@@ -99,6 +99,8 @@ import pandas as pd
 from sklearn.linear_model import BayesianRidge
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_absolute_error, r2_score
+import math
+import matplotlib.mlab as mlab
 
 # Feature Selection
 def extract(data, slide=range, max_range=None):
@@ -152,13 +154,39 @@ r2s = r2_score(Y_test, y_pred)
 print(r2s)
 
 # plotting errors
-fig, ax = plt.subplots()
 test_err = Y_test - y_pred
+mu = test_err.sum()/750
+variance = ((test_err - mu)**2).sum()/750
+sigma = math.sqrt(variance)
+
+fig, ax = plt.subplots()
 plt.scatter(range(1,751), test_err, s=50, alpha=0.3, marker='s')
 plt.ylim(min(test_err), max(test_err))
-plt.axhline(0, color='red', linestyle='--', linewidth=1)
+plt.axhline(mu, color='black', linestyle='--', linewidth=1, label='mean') # along the mean
+plt.axhline(mu+sigma, color='red', linestyle='--', linewidth=1, label='1 s.d') # along one standard deviation
+plt.axhline(mu-sigma, color='red', linestyle='--', linewidth=1) # 68% of data
+plt.axhline(mu+2*sigma, color='red', linestyle='--', alpha=0.5, linewidth=1, label='2 s.d') # along two standard deviations
+plt.axhline(mu-2*sigma, color='red', linestyle='--', alpha=0.5, linewidth=1) # 95% of data
+plt.axhline(mu+3*sigma, color='red', linestyle='--', alpha=0.2, linewidth=1, label='3 s.d') # along 3 standard deviations
+plt.axhline(mu-3*sigma, color='red', linestyle='--', alpha=0.2, linewidth=1) # 99.7% of data
 plt.xlabel('index')
 plt.ylabel('error')
 plt.title('Regression Test Errors')
 plt.show
 plt.savefig('data/Traffic_flow/plots/BRR_TestErrors.png')
+
+# plot normal distribution
+fig, ax = plt.subplots()
+x = np.linspace(min(test_err), max(test_err), 750)
+plt.plot(x,mlab.normpdf(x, mu, sigma))
+plt.axvline(mu, color='black', linestyle='--', linewidth=1, label='mean')
+plt.axvline(mu+sigma, color='red', linestyle='--', linewidth=1, label='1 s.d')
+plt.axvline(mu-sigma, color='red', linestyle='--', linewidth=1)
+plt.axvline(mu+2*sigma, color='red', linestyle='--', alpha=0.5, linewidth=1, label='2 s.d')
+plt.axvline(mu-2*sigma, color='red', linestyle='--', alpha=0.5, linewidth=1)
+plt.axvline(mu+3*sigma, color='red', linestyle='--', alpha=0.2, linewidth=1, label='3 s.d')
+plt.axvline(mu-3*sigma, color='red', linestyle='--', alpha=0.2, linewidth=1)
+plt.xlabel('error')
+plt.title('Normal Distribution of Errors')
+plt.savefig('data/Traffic_flow/plots/BRR_ErrorNormDist.png')
+plt.show()

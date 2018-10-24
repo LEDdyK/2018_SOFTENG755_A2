@@ -174,3 +174,4 @@ output_cv = pd.concat(cv)
 result = output_cv.sort_values(['column_scale', 'model','score'], ascending=False).groupby(['column_scale', 'model']).head(1).sort_values('score',ascending=False).reset_index(drop=True)
 
 output_ho = pd.concat(holdout)
+output_ho.to_csv("data/Occupancy_sensor/ho_result.csv",index=False)

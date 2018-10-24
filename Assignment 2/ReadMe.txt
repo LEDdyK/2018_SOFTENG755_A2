@@ -1,7 +1,14 @@
-To reproduce the whole project, please run ~/load.py first.
+To reproduce the whole project, please run below first.
 
-Traffic, please run ~/TrafficFit.py 
+python .\load.py
 
-Occupancy Sensor, please run ~/Occupancy.py 
+Traffic, please run
+python .\TrafficFit.py
 
-LandSat Image, please run ~/LandSat.py 
+Occupancy Sensor, please run 
+python .\Occupancy.py
+
+LandSat Image, please run
+python .\LandSat.py
+
+For plotting, please use ipython console to run.
